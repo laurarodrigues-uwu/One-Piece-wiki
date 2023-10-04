@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-1: #333;
+    --cor-2: #b3b3b34d;
+    --titulos: #303030;
+}
+
+html {
+    width: 70%;
+    margin: auto;
+    background-image: url(imagens/background.jpg);
+    background-size: contain;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+}
+
+.img_logo {
+    height: 25%;
+    width: 25%;
+}
+
+nav {
+    display: flex;
+    background-color: #575757c5;
+    width: 100%;
+    height: 70px;
+    max-height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: position 1s ease-in-out;
+}
+
+.ul_nav {
+    list-style: none;
+    display: flex;
+    width: 70%;
+    gap: 7%;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.ul_nav li {
+    position: relative;
+}
+
+.ul_nav li a {
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    color: white;
+    font-size: large;
+}
+
+.ul_nav li a:hover {
+    background-color: var(--cor-2);
+    border-radius: 2px;
+}
+
+.ul_nav li ul {
+    display: none;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    background-color: #696969;
+}
+
+.ul_nav li:hover ul,
+.ul_nav li.over ul {
+    display: block;
+    box-shadow: -1px 1px 5px 1px #3333334d;
+}
+
+.ul_nav li ul li {
+    border: 1px solid #c0c0c0;
+    display: block;
+    width: 150px;
+}
+
+
+.nav_search {
+    padding: 20px 0 20px 100px;
+}
+
+.search {
+    width: 160px;
+    height: 25px;
+}
+
+.search_btn {
+    height: 25px;
+    width: 25px;
+}
+
+.wiki_wrapper {
+    background-color: #858585;
+}
+
+.wiki_wrapper2{
+    width: 90%;
+    margin: auto;
+}
+
+span {
+    color: rgb(80, 1, 1);
+    font-weight: bold;
+}
+
+.wiki_hero{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 4em;
+} 
+
+.wiki_title {
+    color: var(--titulos);
+    padding: 0 0 20px 30px;
+    font-size: 2.5em;
+}
+
+.wiki_subtitle {
+    color: var(--titulos);
+    padding: 10px 0 10px 15px;
+    font-size: 2em;
+}
+
+.sub_subtitle {
+    color: rgb(37, 37, 37);
+    font-size: 1.7em;
+    padding: 0 0 5px 10px;
+}
+
+.subsubsubtitle {
+    color: aqua;
+}
+
+p{
+    font-size: 1.3em;
+    padding-bottom: 1em;
+}
+
+.mar{
+    width: 70%;
+}
+
+.rev{
+    width: 25%;
+}    
+
+
+hr {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.ul_geo,
+.ul_raças,
+.ul_haki,
+.ul_esp,
+.ul_classes,
+.ul_normas,
+.ul_cond{
+    font-size: 1.5em;
+    list-style: inside;
+}
+
+.img_geo{
+    width: 100%;
+}
+
+.img{
+    width: 100%;
+}
+
+.ul_raças li a{
+    color: black;
+    text-decoration: underline;
+}
+
+.ul_p span{
+    font-size: 1em;
+    color: black;
+}
+
+.ul_esp li a{
+    color: black;
+}
+
+.ul_classes,
+.ul_esp{
+    list-style: none;
+}
+
+.link_esp a{
+    color: black;
+}
+
+.engenheiro h4{
+    font-size: 1.5em;
+    padding: 10px 0 10px 15px;
+}
+
+.engenheiro ul li ul li{
+    list-style: none;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.233);
+    color: white;
+}
+
+footer a{
+    color: rgb(255, 255, 255);
+}

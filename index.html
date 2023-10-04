@@ -1,0 +1,2191 @@
+<!-- Header, nav, índice com transição pra cada parte, calculadora de vitalidade e de modificador. -->
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>One-Piece Wiki</title>
+  <link rel="stylesheet" href="estilo2.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="html_wrapper">
+
+    <!-- Header -->
+    <div class="header_wrapper">
+      <header class="wiki_header">
+        <img src="imagens/logo.png" alt="logo" class="img_logo" />
+      </header>
+    </div>
+
+    <!-- WIKI -->
+    <div class="wiki_wrapper">
+      <!-- NAV E LISTA -->
+      <nav class="header_nav">
+        <ul class="ul_nav">
+
+          <!-- LISTA HISTÓRIA -->
+          <li>
+            <a href="#historia">História do Mundo</a>
+            <ul>
+              <li><a href="#associacoes">Associações</a>
+              </li>
+              <li>
+                <a href="#geo">Geografia do Mundo</a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- LISTA SISTEMA -->
+          <li>
+            <a href="#sistema">Sistema</a>
+            <ul>
+              <li>
+                <a href="#xp">Tabela de XP</a>
+              </li>
+              <li>
+                <a href="#atributos">Atributos</a>
+              </li>
+              <li>
+                <a href="#calc">Calculadora de Atributos</a>
+              </li>
+              <li>
+                <a href="#racas">Raças</a>
+              </li>
+              <li>
+                <a href="#akuma">Akuma no Mi</a>
+              </li>
+              <li>
+                <a href="#haki">Haki</a>
+              </li>
+          </li>
+          <li>
+            <a href="#especializacoes">Especializações</a>
+          </li>
+          <li><a href="#normas">Normas da Mesa</a></li>
+        </ul>
+        </li>
+
+        <!-- LISTA SISTEMA DE COMBATE-->
+        <li>
+          <a href="#sistema_combate">Sistema de Combate</a>
+          <ul>
+            <li><a href="#laminas">Aprendizado em Lâminas</a> </li>
+            <li><a href="#artesmarciais">Artes Marciais</a> </li>
+            <li><a href="#atirador">Atirador</a> </li>
+            <li><a href="#combate">Combate</a> </li>
+            <li><a href="#condicoes">Condições</a> </li>
+            <li><a href="#condicoes_combate">Condições de Combate</a> </li>
+          </ul>
+        </li>
+        </ul>
+
+        <!-- NAV SEARCH-->
+        <div class="nav_search">
+          <form id="search-form" method="GET">
+            <input type="search" id="search-input" class="search" placeholder="O quê está procurando?" />
+            <button class="search_btn" id="searchButton">Ok</button>
+          </form>
+          <ul id="suggestions">
+
+          </ul>
+        </div>
+
+      </nav>
+
+      <div class="wiki_wrapper2">
+        <h1 class="wiki_hero">Bem-vindo à Wiki do RPG!</h1>
+
+        <!-- HISTÓRIA -->
+        <div class="historia_wrapper" id="historia">
+          <div class="historia_intro">
+            <h1 class="wiki_title">História do Mundo</h1>
+            <p>
+              Os mares se agitaram, para logo se acalmar, uma época de
+              descrença paira sob o
+              mundo. As palavras de Roger que ecoaram no dia de sua morte agora nada mais é que apenas uma lembrança do
+              passado. Para boa parte do mundo One Piece não passa de uma lenda contada para enaltecer quem já não está
+              mais
+              presente, afinal, se ele existe porque até agora nenhum dos poderosos está com ele?
+
+              Ainda assim, existem pessoas que acreditam nas palavras do Rei dos Piratas, continuam sua busca pelo One
+              Piece, enquanto outras preferem ir atrás de outros sonhos pelo mundo, passando por cima de qualquer um que
+              entrarem em seu caminho.
+
+              No final, apenas uma coisa importa, entre contos e lendas, quem sabe onde está a verdade? quem vai
+              encontrar
+              ela? que sonhos morrerão com ela, que sonhos renascerão? O caminho para qualquer dúvida nesse mundo é o
+              mar.
+            </p>
+            <img src="imagens/mar.gif" alt="mar" class="mar">
+          </div>
+
+          <div class="associacoes" id="associacoes">
+            <h2 class="wiki_subtitle">Associações</h2>
+            <p>Associações são o grupo que o seu personagem pertence, cada um possui sua forma de se organizar e suas
+              caracteristicas no mundo, pode escolher entre <a href="#pirata">Piratas</a>, <a
+                href="#revolucionario">Revolucionário</a>, <a href="#marinha">Marinha</a>, <a href="#nobre">Nobre</a> e
+              <a href="#gov">Governo Mundial</a>.
+            </p>
+
+            <div class="pirata" id="pirata">
+              <h3 class="sub_subtitle">Piratas</h3>
+              <img src="imagens/luffy2.gif" alt="pirata">
+              <p>Piratas são criminosos que navegam nos mares, cada tripulação pirata possui diferentes objetivos e
+                diferentes de forma de agir. Eles agem por interesse próprio na maioria das vezes e são os principais
+                inimigos da Marinha, por conta disso, não costumam serem bem vistos na maioria dos lugares.
+
+                Uma tripulação pirata é sempre independente, agindo por conta própria e indo aonde quer, mas também por
+                serem independentes precisam conseguir a maioria das coisas sozinhos como comida, dinheiro,
+                equipamentos,
+                barcos, etc.</p>
+              <hr>
+            </div>
+
+            <div class="revolucionario" id="revolucionario">
+              <h3 class="sub_subtitle">Revolucionário </h3>
+              <img src="imagens/revolucionario.png" alt="revolucionario" class="rev">
+              <p>O Exército Revolucionário é uma organização secreta que opera nas sombras, dedicada a derrubar o
+                Governo
+                Mundial e lutar contra a tirania. Ao contrário dos piratas, o Exército Revolucionário age com um
+                propósito
+                claro: promover a justiça e a liberdade em um mundo onde o Governo Mundial exerce um controle opressivo.
+                Eles são os principais inimigos do Governo Mundial, e suas atividades geralmente são realizadas em
+                sigilo.
+                Evitam conflitos diretos, agindo mais sorrateiramente e evitando atenção desnecessária, já que seu
+                objetivo é libertar escravos, acabar com governos tiranos, incitar rebeliões contra o governo e espalhar
+                a
+                verdade sobre o mundo.
+
+                Revolucionários são um exército independente, ao invés de viverem no mar, possuem uma base secreta onde
+                organizam táticas e estrategias para seus movimentos contra o governo. A hierarquia no exército
+                revolucionário existe, sendo em ordem decrescente Comandantes, Oficiais e Agentes de Campo, porém essa
+                hierarquia é branda, o que significa que os comandantes podem tomar a linha de frente em uma invasão.
+                Agem
+                apenas conforme o plano e não de maneira individual e egoista.</p>
+              <hr>
+            </div>
+
+            <div class="marinha" id="marinha">
+              <h3 class="sub_subtitle">Marinha</h3>
+              <img src="imagens/garp.gif" alt="marinha">
+              <p>A Marinha é uma das forças militares mais poderosas e influentes no mundo de One Piece. Como o órgão de
+                aplicação da lei do Governo Mundial, sua missão principal é manter a ordem e proteger o status quo do
+                mundo, muitas vezes em oposição direta aos piratas e ao Exército Revolucionário.
+
+                A Marinha é uma organização altamente hierárquica, com uma cadeia de comando bem definida. No topo da
+                hierarquia está o Almirante da Frota, seguido pelos Almirantes e Vice-Almirantes. Esses líderes
+                militares
+                são conhecidos por sua força e habilidade de combate excepcionais. A Marinha também possui uma grande
+                força de oficiais, soldados e marinheiros comuns que operam em navios de guerra em todo o mundo.
+
+                São bem quistos na maioria dos lugares, exceto ilhas piratas e similares. Sendo a força militar do
+                Governo
+                Mundial, possuem qualquer tipo de recurso mais facilmente. Marinheiros não agem por conta própria,
+                apenas
+                quando recebem alguma ordem superior e sempre com dois objetivos, defender civis e as vontades do
+                Governo
+                Mundial.
+
+                Apesar de serem parte do governo, algumas ordens vindas até eles podem acabar não sendo bem aceitas
+                entre
+                as patentes mais altas, mas dificilmente contradizem, apenas obedecendo contra sua vontade tentando
+                evitar
+                o pior.
+
+                A Marinha tem acesso a recursos significativos, incluindo tecnologia avançada e navios de guerra de
+                última
+                geração. Eles são capazes de mobilizar rapidamente em resposta a ameaças e têm o apoio logístico do
+                Governo Mundial.</p>
+              <hr>
+            </div>
+
+            <div class="nobre" id="nobre">
+              <h3 class="sub_subtitle">Nobre</h3>
+              <img src="imagens/nobre.gif" alt="nobre">
+              <p>Os Nobres são uma classe social privilegiada que ocupa o topo da hierarquia social em muitas ilhas do
+                mundo, especialmente nas ilhas sob o domínio do Governo Mundial. Eles são conhecidos por sua riqueza,
+                status e influência, mas também por seu comportamento arrogante e desdenhoso em relação aos cidadãos
+                comuns.
+
+                A sociedade dos Nobres é rigidamente estratificada, com famílias nobres hereditárias ocupando posições
+                de
+                poder por gerações. Eles frequentemente vivem em luxuosas mansões, desfrutando de uma vida de conforto e
+                privilégio, enquanto os cidadãos comuns enfrentam dificuldades e desigualdades.
+
+                Os objetivos dos Nobres variam, mas muitas vezes incluem a manutenção de seu próprio status e poder.
+                Eles
+                podem se envolver em política, comércio e conspirações para alcançar seus objetivos, frequentemente às
+                custas dos menos afortunados. Os Nobres também podem ser notórios por sua falta de empatia em relação às
+                dificuldades enfrentadas pela maioria das pessoas.
+
+                Alguns nobres e famílias reais podem acabar sendo mais amigáveis, se diferenciando da maioria dos
+                demais,
+                principalmente alguns reis de importantes reinos, já que seus objetivos acabam sendo mais voltados em
+                cuidar de seu povo do que seus próprios interesses.
+
+                Na hierarquia dos nobres, eles estão abaixo apenas do Governo Mundial e consequentemente Dragões
+                Celestiais. Sendo assim, caso seja de interesse do Governo, serão tratados da mesma forma que qualquer
+                outro no mundo. Isso também significa que por mais que sua influência e dinheiro permitam fazer muitas
+                coisas, não podem exatamente fazer tudo que querem. Nobres raramente lutam, ficando apenas em questões
+                mais diplomáticas.</p>
+              <hr>
+            </div>
+
+            <div class="governo_mundial" id="gov">
+              <h3 class="sub_subtitle">Governo Mundial</h3>
+              <img src="imagens/governo_mundial.gif" alt="governomundial">
+              <p>O Governo Mundial é uma das forças mais influentes e dominantes no mundo de One Piece. Ele é uma
+                organização global que exerce controle sobre um grande número de ilhas e nações em todo o mundo,
+                mantendo
+                uma autoridade quase incontestável. Seu objetivo declarado é manter a paz e a estabilidade, mas sua
+                verdadeira agenda pode ser mais complexa do que parece.
+
+                O Governo Mundial é uma entidade altamente centralizada, com sua sede principal em Mariejois. Ele é
+                liderado pelos Gorosei, um grupo de líderes idosos e poderosos que tomam decisões cruciais para o mundo.
+                Abaixo deles estão os Almirantes da Marinha e vários órgãos governamentais, como o Cipher Pol e os
+                Dragões
+                Celestiais, que desempenham papéis importantes na manutenção da ordem.
+
+                Os objetivos do Governo Mundial incluem a preservação do status quo, a manutenção da supremacia mundial
+                e
+                a eliminação de qualquer ameaça à sua autoridade. Eles frequentemente veem os piratas e o Exército
+                Revolucionário como inimigos a serem combatidos a todo custo, e estão dispostos a usar métodos
+                questionáveis para alcançar seus objetivos.
+
+                A população em geral muitas vezes vê o Governo Mundial como uma força benevolente, pois ele mantém a
+                ordem
+                e a segurança em muitas ilhas. No entanto, há aqueles que enxergam através da fachada e veem o Governo
+                como opressor e corrupto, especialmente nas ilhas onde os Nobres têm uma forte presença.
+
+                O Governo Mundial tem recursos praticamente ilimitados à sua disposição, incluindo a Marinha, uma rede
+                de
+                espionagem global, tecnologia avançada e a capacidade de emitir ordens de prisão e recompensas por
+                procurados em todo o mundo.</p>
+              <hr>
+            </div>
+
+          </div>
+
+          <div class="geo" id="geo">
+            <div class="geo_intro">
+              <h2 class="wiki_subtitle">Geografia do Mundo</h2>
+              <p>O mundo é divido em 4 mares chamados blue. <a href="#eastblue">East Blue</a>, West Blue, South Blue e
+                <a href="#northblue">North Blue</a>. Existem também
+                um enorme continente que dá a volta no mundo com nome de Red Line, é o único continente existente.
+                Passando entre os blues, há uma rota chamada "Grand Line", na qual a primeira metade está de um lado do
+                mundo junto do East Blue e South Blue, essa é chamada de Paradise. A outra metade, que fica do outro
+                lado
+                da Red Line, fica entre o North Blue e East Blue, chamada Novo Mundo.
+
+                Grand Line é a principal rota do mundo, nela se encontram as principais ilhas, principais tripulações
+                piratas, bases da marinha e do governo mundial, e é claro, a única rota para se achar o One Piece.
+
+                Aos dois lado da Grand Line se encontra o Calm Belt, um mar sem correnteza e vento. Nesse mar, habitam
+                os
+                reis dos mares, seres marítimos de tamanhos colossais. O Calm Belt torna praticamente impossível de se
+                atravessar de um blue para outro, já que sem correnteza ou vento seu barco não conseguiria avançar, e
+                com
+                a existência dos reis dos mares seria apenas questão de tempo até um aparecer e destruir sua embarcação.
+                Atravessar o calm belt é um feito possível apenas por grandes piratas e pela marinha, qualquer outro que
+                tentar atravessar sem devidas condições vão enfrentar a morte certa, sendo assim, a única forma possível
+                de se entrar na Grand Line é pela Montanha Reversa.
+
+                A Montanha Reversa fica na Red Line no começo da Grand Line, o nome vem por conta de uma cachoeira com
+                uma
+                correnteza que vai de baixo para cima, levando os barcos ao topo da montanha, em seguida levando para a
+                única queda de água existente que é em direção ao começo da Grand Line. Dessa forma, independente de que
+                blue você comece sua jornada, todos começaram do mesmo lugar na Grand Line.
+
+                Uma vez dentro da Grand Line é praticamente impossível de sair, afinal os Calm Belt estão de ambos os
+                lados, sendo assim, entrar na Grand Line sendo um pirata ou semelhante é ter consciência de que você só
+                poderá sair de lá se tornando um grande pirata, ou então, morrerá nela.
+
+                Tentar atravessar a Red Line tanto por baixo quanto por cima também é impossível, porque sua extensão
+                para
+                baixo chega nas profundezas mais abissais dos mares e para cima chega em uma altura além das nuvens.
+
+
+                Essa geografia tão separada faz com que o clima das ilhas seja completamente diferente. Cada ilha tem
+                uma
+                estação do ano, nunca mudando seu clima independente da época do ano. Não apenas isso, é um dos
+                principais
+                fatores pela dificuldade de informações se espalharem pelo mundo, sendo bem comum que pessoas que morem
+                no
+                mesmo mar não saibam da existencia de uma ilha mais afastada ou sequer saibam a verdade por trás de
+                algum
+                evento histórico.
+              </p>
+
+            </div>
+
+            <div class="grandline" id="grandline">
+              <h2 class="wiki_subtitle">Grand Line</h2>
+              <p>A principal rota do mundo, nela está os principais piratas, bases da marinha, ilhas com pessoas muito
+                importantes, entre outros.
+
+                Sendo dividida em duas partes, Paradise que fica próxima ao East e South Blue, Novo Mundo que fica
+                próximo
+                ao North Blue e West Blue e é considerado o lugar mais perigoso do mundo principalmente para se navegar
+                no
+                mar. É dito que no Novo Mundo você apenas consegue sobreviver sendo um pirata caso de alie a um dos
+                Yonkou.</p>
+              <h3 class="sub_subtitle">Paradise</h3>
+              <img src="imagens/mapa.jpg" alt="mapa">
+              <ul class="ul_geo">Os lugares mais notáveis da Paradise são:
+                <li class="ilhas">Ilha Creta</li>
+                <li class="ilhas">Alabasta</li>
+                <li class="ilhas">Jaya</li>
+                <li class="ilhas">Amazon Lily</li>
+                <li class="ilhas">Triângulo Florian</li>
+                <li class="ilhas">Ilha Fullmoon</li>
+                <li class="ilhas">Water 7</li>
+                <li class="ilhas">Enies Lobby</li>
+                <li class="ilhas">Impel Down</li>
+                <li class="ilhas">Marine Ford</li>
+                <li class="ilhas">Arquipelogo Sabaody</li>
+              </ul>
+            </div>
+
+            <hr>
+
+            <div class="eastblue" id="eastblue">
+              <h2 class="wiki_subtitle">East Blue</h2>
+              <p>O East Blue é considerado o mar mais fraco entre os 4. Os piratas daqui não são tão fortes, a marinha
+                mal
+                se preocupa com esse lugar já que com poucos soldados já podem eliminar a maioria das ameaças. Apesar
+                disso, é também o mar mais pacífico entre os 4, mesmo que a pirataria seja presente, costuma ter menos
+                problema que os outros mares.
+                Ao todo são 6 principais ilhas no East Blue</p>
+
+              <div class="portport">
+                <h3 class="sub_subtitle">Ilha PortPort LongPort</h3>
+                <img src="imagens/PortPort.webp" alt="portport">
+                <p>Situada no meio do East Blue, a ilha PortPort LongPort é uma das ilhas mais importantes dos 4 blue.
+                  Essa ilha opera como um grande porto, onde sempre tem um grande fluxo de navios mercadores e da
+                  marinha,
+                  ficando assim próxima a ilha Polestar.
+
+                  A principal caracteristica dessa ilha é ser não apenas um polo para barcos que partem ao redor do
+                  mundo,
+                  mas também ser o único local de acesso para civis a ilha de Creta no Calm Belt.
+
+                  Piratas praticamente nunca são vistos nessa ilha, afinal marinheiros precisam estar constantemente
+                  presentes, para garantir a segurança das mercadorias transportadas.
+
+                  Seu clima é similar ao outono, apesar de possuir mares escuros e uma nevoa densa que constantemente
+                  passa pela ilha.</p>
+                <hr>
+              </div>
+
+              <div class="dawn">
+                <h3 class="sub_subtitle">Ilha Dawn</h3>
+                <img src="imagens/dawn.png" alt="dawn" class="img_geo">
+                <p>A ilha de Dawn fica no extremo leste do East Blue, sendo a última ilha desse mar (usando a rota da
+                  Grand Line como referência).
+
+                  Tendo um clima de verão, é uma ilha de vida pacata e que não possui muitos problemas. Nela fica o
+                  reino
+                  de Goa, algumas vilas em partes mais rurais da ilha e o Terminal Cinza, que separa o principal reino
+                  das
+                  demais ilhas.</p>
+                <hr>
+              </div>
+
+              <div class="polestar">
+                <h3 class="sub_subtitle">Ilha Polestar</h3>
+                <img src="imagens/polestar.webp" alt="polestar" class="img_geo">
+                <p>Uma ilha pacata sem muitas caracteristicas marcantes, além de sua cidade chamada Longue Town.
+
+                  A cidade Longue Town é uma grande ilha comercial, onde muitas trocas são feitas, sejam mercadorias
+                  recebidas de outros mares pela ilha Longport ou mercadorias da própria ilha.
+
+                  Um grande acontecimento dessa ilha é ter sido o local de nascimento de Gol D. Roger, e também seu
+                  local
+                  de execução.</p>
+                <hr>
+              </div>
+
+              <div class="tequilawolf">
+                <h3 class="sub_subtitle">Tequila Wolf</h3>
+                <img src="imagens/tequilawolf.webp" alt="tequilawolf" class="img_geo">
+                <p>Um grande país em forma de ponte. Aqui é para onde é mandado escravos e pessoas que pertenciam a
+                  países
+                  que não são aliados ao governo mundial, sendo obrigados a trabalharem até a morte na construção da
+                  ponte. Dizem que essa construção teve inicio a 700 anos atrás.</p>
+                <hr>
+              </div>
+
+              <div class="warship">
+                <h3 class="sub_subtitle">Ilha Warship </h3>
+                <img src="imagens/warship.webp" alt="warship" class="img_geo">
+                <p>Uma ilha com formato de navio de guerra, possuí algumas estruturas ancestrais pequenas cidades com
+                  costumes antigos. Seu povo costuma contar muitas histórias sobre os passado.</p>
+                <hr>
+              </div>
+
+              <div class="animaisraros">
+                <h3 class="sub_subtitle">Ilha dos Animais Raros</h3>
+                <img src="imagens/animaisraros.webp" alt="animaisraros" class="img_geo">
+                <p>Uma ilha sem nenhuma civilização e completamente coberta de árvores e outros tipos de vegetação. Nela
+                  habita criaturas raras e diferentes, com formatos nem um pouco comuns.</p>
+
+              </div>
+
+              <p>Ainda existem outras ilhas no East Blue, porém essas são as principais.</p>
+              <hr>
+            </div>
+
+            <div class="northblue" id="northblue">
+              <h2 class="wiki_subtitle">North Blue</h2>
+              <p>North Blue é um dos mares que fica próximo ao Novo Mundo, assim como os outros mares tem sua maior
+                parte
+                em água apenas com algumas ilhas. O North Blue se descata por ter diversas ilhas com grande
+                desenvolvimento bélico, governos mais focador em poder militar e experimentos cientificos.</p>
+
+              <h3 class="sub_subtitle">Deut Zwei Blitz</h3>
+              <img src="imagens/deutzwei.jpg" alt="deutzwei" class="img_geo">
+              <p>Também abreviado para apenas Blitz, é um reino militar e móvel, onde é realizado diversas pesquisas de
+                foco militar. Não é considerado um reino oficial pelo governo mundial, apesar disso, possuí diversas
+                constribuições com os mesmos, com alguns cientistas deixando este reino e indo trabalhar nos
+                laboratórios
+                de Vegapunk. O reino Blitz também costuma prestar serviços a grandes piratas do mundo, tendo vínculos
+                com
+                ambos os lados.</p>
+              <hr>
+
+              <h3 class="sub_subtitle">Ilha Britannia</h3>
+              <img src="imagens/britannia.jpg" alt="britannia" class="img_geo">
+              <p> Ilha de Britannia é uma ilha que comporta o Grande Reino de Tea, um reino com grande vínculo com
+                governo
+                mundial durante todos esses anos. É o principal apoiador de muitas atitudes do governo e um dos
+                principais
+                a ser contra a ideia de Shichibukais. Fornece grande apoio militar para a marinha, para o
+                desenvolvimento
+                de melhoria de poderio. Essa ilha é onde nasceu o antigo yonkou Jack.</p>
+              <hr>
+
+              <h3 class="sub_subtitle">Ilha Myka</h3>
+              <img src="imagens/myka.png" alt="myka" class="img_geo">
+              <p>Uma ilha coberta de gelo e neve, onde fica o reino de Kohva. Não possuí tanto poder militar igual as
+                ilhas
+                vizinhas, por ter um clima de extrema dificuldade de sobrevivência. Possui apenas alguns centros de
+                pesquisa biológicos, mas sua principal caracteristica é a lenda da Fênix de Gelo, uma criatura
+                mitológica
+                que diz ter tido origem nessa ilha mas foi embora acabando com um fim desconhecido.</p>
+              <hr>
+
+              <h3 class="sub_subtitle">Ilha Sepentrio</h3>
+              <img src="imagens/sepentrio.png" alt="sepentrio" class="img_geo">
+              <p>A ilha Sepentrio, uma ilha da qual muitos mistérios a assolam. Uma das poucas coisas que se sabe a
+                respeito dessa ilha é ser uma ilha artificial criada muito tempo atrás, possuindo 3 divisões que se
+                ligam
+                com uma grande praça em seu centro. Nessa ilha existe uma enorme catedral com diversos livros proibidos,
+                onde apenas líderes da ilha possuem acesso. Esses livros são mantidos com o único propósito de serem
+                utilizados pelo governo mundial, e só não foram queimados ainda por não conseguirem traduções exatas do
+                que se tem ali. </p>
+              <hr>
+            </div>
+          </div>
+        </div>
+
+        <!-- SISTEMA -->
+        <div class="sistema_wrapper" id="sistema">
+          <h1 class="wiki_title">Sistema</h1>
+          <p>Guia básico para saber os atributos de seu personagem, regras do RPG e mais!</p>
+
+          <!-- TABELA DE XP -->
+          <div class="xp" id="xp">
+            <h2 class="wiki_subtitle">TABELA DE XP - EM BREVE</h2>
+            <img src="imagens/comingsoon.gif" alt="" class="img">
+            <hr>
+          </div>
+
+          <!-- ATRIBUTOS -->
+          <div class="atributos" id="atributos">
+            <h2 class="wiki_subtitle">Atributos</h2>
+            <p>A base dos atributos para personagens criados por jogadores sempre será 15, sendo menor que isso apenas
+              por
+              exigência da especialização e raça. Inicialmente todos recebem 5 pontos iniciais para distribuir nos
+              atributos. Vigor e Vitalidade possuem uma regra diferente (consultar mais a baixo).
+
+              Esses 5 pontos podem ser sacrificados para que consiga dar re-roll em algum dos dados na criação da ficha.
+
+              Os atributos serão usados da seguinte forma:</p>
+
+            <div class="atributos_valor">
+              <p><span>Força:</span>Usado para maioria dos testes físicos como ataque, dano, arremesso, levantar objetos
+                pesados, etc. </p>
+              <p><span>Resistência:</span>Usado para situações de tenacidade e resiliência, como defesa, resistir a
+                efeitos
+                de queda, atordoamento, etc </p>
+              <p><span>Destreza:</span>Usado em testes de acerto e arremesso, situacionalmente usado em alguns outros
+                testes
+                manuais. </p>
+              <p><span>Agilidade:</span>Usado em testes que exigem um movimento rápido, como esquivas, acrobacias,
+                furtividade, etc </p>
+              <p><span>Vitalidade:</span>Define seu HP. Todos começam com 80 de vitalidade base, recebendo um adicional
+                de
+                +10 por nível. Também como adicional, o jogador recebe em vitalidade base (força + resistência) x 2. O
+                calculo para vitalidade total é base x ( raça + esp + treino) / 5. (SE FICAR MENOR QUE 80 NÃO FAZ A
+                DIVISÃO)
+                Cada ponto de atributo colocado em Vitalidade equivale a 10, ou seja, quando você tem 80 de hp e coloca
+                1
+                ponto de atributo em vitalidade, você fica com 90 ao invés de ficar com 81. </p>
+              <p><span>Força de Vontade:</span>Esse atributo é o que determina o bônus do seu haki e se você vai estar
+                apto
+                para utilizar haki. </p>
+              <p><span>Percepção:</span>O atributo que define não apenas seu sensorial como também a eficiência de sua
+                visão. Usado em testes de mira com armas de fogo, perceber objetos e ameaças em volta, enxergar pontos
+                que
+                podem passar despercebidos, etc. </p>
+              <p><span>Inteligência:</span>Define a capacidade cognitiva do seu personagem, assim como o principal
+                atributo
+                para especializações mais intelectuais. Usado em testes para criar remédios, identificar doenças, criar
+                equipamentos e estruturas, entender escrituras antigas, leitura de mapas etc. </p>
+              <p><span>Carisma:</span>Define sua presença de espírito e sua capacidade de induzir pessoas, ou cativar
+                elas.
+                Usado em testes de diplomacia e ao tentar tocar algum instrumento. </p>
+              <p><span>Vigor:</span>A estamina do seu personagem, usado para ataques mais elaborados, uso de Haki e
+                Akuma
+                no
+                Mi. O calculo para vigor é (RES + FOR) x 2. Vigor aumenta de 5 em 5 por nível. A cada 2 pontos gastos no
+                ATRIBUTO vigor, seu vigor aumenta em 5. </p>
+            </div>
+
+            <h2 class="wiki_subtitle">Modificador</h2>
+            <p>A soma para o modificador é feita da seguinte forma (base + esp + raça + treino) x 3 / 10 . Esse calculo
+              vale para todos os atributos.
+
+              Essa conta não é usada para o calculo de vitalidade e vigor, esses atributos não possuem modificador.</p>
+            <h2 class="wiki_subtitle">Deslocamento</h2>
+            <p>Deslocamento se dá com base na sua agilidade base/2.</p>
+            <h2 class="wiki_subtitle">Perícias</h2>
+            <p>Periciais são dadas com base na sua história e ao longo da campanha, os bônus não serão tão exorbitantes
+              apenas um adicional simples ou a capacidade de lidar melhor com uma situação.</p>
+            <h2 class="wiki_subtitle">Idade</h2>
+            <p>Velhos em One Piece são bem fracos ou extremamente fortes, por conta disso a idade máxima do personagem
+              no
+              nível 1 é 45 anos e a mínima é 17. Em relação a altura, seja coerente, por mais que humanos em One Piece
+              consigam passar de 3 metros, não significa que você pode ter o mesmo tamanho de um gigante sendo um
+              tritão.
+              Se tiver duvidas em relação a altura procure informação na wiki, ou coloque na sua ficha a altura que
+              deseja
+              e o mestre verifica se aprova ou não.</p>
+            <hr>
+          </div>
+
+          <!-- CALCULADORA DE ATRIBUTOS -->
+          <div class="calculadora" id="calc">
+            <h2 class="wiki_subtitle">CALCULADORA - EM BREVE</h2>
+            <img src="imagens/comingsoon.gif" alt="" class="img">
+            <hr>
+          </div>
+
+          <!-- RAÇAS -->
+          <div class="racas">
+            <h2 id="racas" class="wiki_subtitle">Raças</h2>
+            <img src="imagens/raças.webp" alt="raças" class="img">
+            <p>Raças em One Piece são compostas por os mais diversos seres, para os jogadores as disponiveis são:</p>
+            <ul class="ul_raças">
+              <li><a href="#humanos">Humanos</a></li>
+              <li><a href="#mink">Mink</a></li>
+              <li><a href="#ciborgues">Ciborgues</a></li>
+              <li><a href="#skypianos">Skypianos</a></li>
+              <li><a href="#shandianos">Shandianos</a></li>
+              <li><a href="#birkan">Birkan</a></li>
+              <li><a href="#tritao">Tritão</a></li>
+              <li><a href="#meio-tritao">Meio-Tritão</a></li>
+              <li><a href="#gigante">Gigante</a></li>
+              <li><a href="#wotan">Wotan</a></li>
+              <li><a href="#lunar">Lunar</a></li>
+              <li><a href="#mutante">Mutante</a></li>
+              <li><a href="#kuja">Kuja</a></li>
+              <li><a href="#oni">Oni</a></li>
+              <li><a href="#dragao_celestial">Dragão Celestial</a></li>
+              <li><a href="#sereia">Sereia</a></li>
+              <li><a href="#tontatta">Tontatta</a></li>
+              <li><a href="#tres_olhos">Três Olhos</a></li>
+            </ul>
+
+            <div id="humanos">
+              <h3 class="wiki_subtitle">Humanos</h3>
+              <img src="imagens/humano.gif" alt="humano">
+              <p>Humanos são presentes em praticamente todos os lugares do mundo, são a raça com maior capacidade
+                adaptativa e com maior proeficiência na maioria das funções, <span>recebem +2 em 2 atributos da sua
+                  escolha,
+                  recebem também +5 no bônus da especialização. Humanos quando perto da morte ativam seu espírito
+                  indomável,
+                  recebendo +3 no teste para resistir a morte. Quando estão desmaiados, humanos recebem +5 no teste de
+                  FDV
+                  para levantar.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="mink">
+              <h3 class="wiki_subtitle">Mink</h3>
+              <img src="imagens/mink.gif" alt="mink">
+              <p>Minks são seres humanoides com aparência similar a um animal terrestre e mamifero. São comuns de serem
+                vistos ao redor do mundo ainda que menos que os humanos. Seu lugar de origem atual é Zou, apesar de que
+                não necessariamente todos os Mink tenham vindo de Zou. <span>Minks recebem bônus variado baseado se é um
+                  herbivoro ou carnivoro e na especie similar a ele, recebendo +3 em 2 atributos (com exeção de
+                  inteligência) e -5 em algum outro. Minks possuem a capacidade de usar o Electro, uma habilidade que
+                  permite que eles energizem seus corpos com eletricidade, aumentando sua agilidade em +5, pode ser
+                  usado
+                  apenas 1 vez por dia, a cada 5 níveis pode usar mais 1 vez.
+                  Minks também possuem a forma Suolong, seus corpos aumentam de tamanho e todos seus pelos ficam
+                  brancos.
+                  A
+                  forma Suolong ativa apenas quando o Mink vê a lua cheia e só podem ativar 1 vez por dia, seus status
+                  físicos duplicam. Despertam essa forma no nível 5.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="ciborgues">
+              <h3 class="wiki_subtitle">Ciborgues</h3>
+              <img src="imagens/ciborgue.gif" alt="ciborgue">
+              <p>Ciborgues não são tão comuns de serem encontrados ao redor do mundo, mas também não são tão raros,
+                figuras de alto escalão do governo e marinha já encontraram pelo menos 1 ciborgue na vida. Ciborgues tem
+                um corpo mais resistente e forte que um humano, <span>recebem +4 em força e resistência, mas perdem -2
+                  em
+                  agilidade. Ciborgues também podem receber melhoras no seu corpo ganhando +2 no atributo relacionado a
+                  melhora, pode começar com 2 melhoras no corpo, modificações a mais são feitas ao longo da
+                  jornada.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="skypianos">
+              <h3 class="wiki_subtitle">Skypianos</h3>
+              <img src="imagens/skypiano.gif" alt="skypiano">
+              <p>Skypianos vem da ilha do céu chamada Skypia, não são comuns de serem vistos no mundo fora das ilhas do
+                céu, porém não são raros, alguns skypianos possuem antenas. <span>Skypianos recebem +3 em inteligência e
+                  -2 em
+                  força, além disso ganham +10 em deslocamento e a capacidade de voar. Skypianos possuem o conhecimento
+                  em
+                  dials e começam com 1 dial escolhendo entre Breath Dial, Vision Dial e Tone Dial.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="shandianos">
+              <h3 class="wiki_subtitle">Shandianos</h3>
+              <img src="imagens/shandiano.gif" alt="shandiano">
+              <p>Diferente dos Skypianos, Shandianos são mais fortes fisicamente, também são habitantes das ilhas do
+                céu.
+                <span>Shandianos recebem +4 em resistência e força mas tem -5 em inteligência. Além das asas que
+                  permitem os
+                  Shandianos voar, recebem +10 de deslocamento. Como habilidade de raça Shandianos podem realizar mais
+                  uma
+                  ação antes de cair, recebe +10 em teste de força.</span>
+              </p>
+
+              <hr>
+            </div>
+
+            <div id="birkan">
+              <h3 class="wiki_subtitle">Birkan</h3>
+              <img src="imagens/birkan.gif" alt="birkan">
+              <p>Birkans são outra raça que habita as ilhas do céu, são semelhantes aos Skypianos e Shandianos, porém
+                suas
+                asas são maiores e voltadas para baixo. <span>Birkans recebem +6 em força e resistência, mas tem -5 em
+                  carisma
+                  e
+                  -3 em inteligência. Birkan também podem tem +10 de deslocamento e podem voar. Como habilidade de raça
+                  Birkan podem usar o Mantra, uma forma básica do Haki.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="tritao">
+              <h3 class="wiki_subtitle">Tritão</h3>
+              <img src="imagens/tritao.webp" alt="tritao">
+              <p>Tritões, também chamados de homens-peixe, são os habitantes da Ilha dos Tritões, são seres humanoides
+                com
+                caracteristicas de animais aquâticos. <span>Recebem +7 em força e resistência, mas perdem -6 em carisma.
+                  Tritões
+                  podem respirar tranquilamente embaixo da água, além de possuirem +20 de deslocamento quando estão na
+                  água.</span>
+              </p>
+
+              <hr>
+            </div>
+
+            <div id="meio-tritao">
+              <h3 class="wiki_subtitle">Meio-tritão</h3>
+              <img src="imagens/meio-tritao.gif" alt="meio-tritao">
+              <p>Meios-tritões são hibridos de humanos com tritões, dificilmente são vistos já que tritões e humanos não
+                costumam conviver juntos. <span>Recebem +3 em força, resistência e agilidade e -3 de carisma.
+                  Meio-tritões
+                  podem
+                  respirar tranquilamente embaixo da água, além de possuirem +10 de deslocamento quando estão na
+                  água.</span>
+              </p>
+
+              <hr>
+            </div>
+
+            <div id="gigante">
+              <h3 class="wiki_subtitle">Gigante</h3>
+              <img src="imagens/gigante.gif" alt="gigante">
+              <p>Vindos do reino de Elbaf, Gigantes são um dos maiores seres no mundo, sua aparência é similar de um
+                humano exceto pelo seu tamanho. <span>Gigantes tem +12 em força , resistência e +10 em vitalidade, mas
+                  recebem
+                  -10 em destreza e agilidade, exceto para acertos corpo a corpo onde tem +12. Gigantes tem +5 de
+                  deslocamento. Como habilidade de raça, gigantes recebem +50 para levantar objetos ou estruturas, além
+                  de
+                  ter critico x5 em estruturas.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="wotan">
+              <h3 class="wiki_subtitle">Wotan</h3>
+              <img src="imagens/wotan.gif" alt="wotan">
+              <p>Wotan são meio gigante e meio tritão, seu tamanho é menor que a metade de um gigante mas ainda são bem
+                maiores que humanos e outras raças. <span>Recebem +6 de força e resistência, mas recebem -5 de destreza
+                  e
+                  agilidade . Wotans conseguem respirar embaixo da água mas não recebem nenhum bônus de deslocamento,
+                  apenas
+                  não sofrem debuff. A caracteristica mais marcante dos Wotan é sua pele viscosa, dificultando o acerto
+                  de
+                  ataque físicos de pancada, quem tentar acertar o ataque recebe -10 caso o Wotan defenda.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="kuja">
+              <h3 class="wiki_subtitle">Kuja</h3>
+              <img src="imagens/kuja.gif" alt="kuja">
+              <p>Da Ilha das Amazonas, as Kuja são uma tribo onde nasce apenas mulheres, são semelhantes a humanas em
+                aparência, exceto que constumam serem mais altas. <span>Recebem +6 em destreza e agilidade, mas recebem
+                  -3 em
+                  inteligência. Kujas podem usar haki com mais facilidade, conseguindo usar haki básico desde criança.
+                  Além
+                  disso, Kujas recebem +5 em testes de carisma contra homens, exceto intimidação.</span> R</p>
+
+              <hr>
+            </div>
+
+            <div id="sereia">
+              <h3 class="wiki_subtitle">Sereia</h3>
+              <img src="imagens/sereia.gif" alt="sereia">
+              <p>Assim como os tritões, as sereias vem da Ilha dos Tritões, possuem um corpo da cintura pra cima similar
+                aos humanos e da cintura para baixo igual a de um peixe. <span>Recebe +8 em carisma e +4 em
+                  inteligência, mas
+                  recebem -5 em força e resistência. Sereias ganham +30 de deslocamento na água e podem respirar
+                  tranquilamente nela.</span> </p>
+
+              <hr>
+            </div>
+
+            <div id="tontatta">
+              <h3 class="wiki_subtitle">Tontata</h3>
+              <img src="imagens/tontata.gif" alt="tontatta">
+              <p>Tontatas são anões que habitam o reino de Dressrosa, sua existência para maioria do mundo é
+                desconhecida
+                até mesmo para os habitantes de Dressrosa. <span>Recebem +10 de agilidade e destreza, mas recebem -12 em
+                  vitalidade e -5 em resistência.
+                  Tontatas ganham +12 em testes de furtividade.</span> </p>
+
+              <hr>
+            </div>
+
+            <h2 class="wiki_subtitle">Raças Bloqueadas</h2>
+            <p>Raças bloqueadas são consideradas todas as raças raras, raças que existem apenas uma única região em
+              pequena quantidade e ou quase extintas. Para poder conseguir escolher uma raça bloqueada faça um teste de
+              1d100.</p>
+
+            <div id="dragao_celestial">
+              <h3 class="wiki_subtitle">Dragão Celestial</h3>
+              <img src="imagens/dragao_celestial.gif" alt="dragao_celestial">
+              <p>Dragão Celestial são topo da hierarquia no Governo Mundial, são considerados Deuses por serem
+                descendentes dos criadores do mundo, sua palavra é uma ordem e sua vontade é maior que qualquer vida
+                existente. <span>Dragões Celestiais não tem nenhum bônus além de +12 em carisma, tem -5 em força,
+                  resistência,
+                  agilidade, destreza e inteligência e FDV, além de -8 em vigor e -20 em vitalidade</span> . Como ápice
+                da
+                nobreza,
+                Dragões Celestiais são sempre obedecidos pelo governo e marinha, além de poderem ter escravos.
+                Dificuldade: 80<= </p>
+
+                  <hr>
+            </div>
+
+            <div id="lunar">
+              <h3 class="wiki_subtitle">Lunar</h3>
+              <img src="imagens/lunar.gif" alt="lunar">
+              <p>Lunarios são uma espécie praticamente extinta, talvez existam apenas 10 no mundo todo, provavelmente
+                até
+                menos. A não ser grandes nomes do mundo e alto excalão do governo, ninguém mais sabe da existência dos
+                lunarios. Sua aparência é de pele escura, cabelos brancos e asas grandes e escuras, conseguem invocar
+                fogo
+                em suas costas e usa disso para intensificar suas ações físicas. <span>Recebem +9 de força, resistência,
+                  vigor
+                  e
+                  +20 de vitalidade, mas recebem -10 em carisma e -8 em inteligência. Podem voar, ganham +15 de
+                  deslocamento, usando fogo ganham +10 em dano e seus ataques causam queimadura média, além de queimar
+                  tudo
+                  que estiver proximo a sua volta. Fogo também aumenta em +10 o deslocamento, e consome 5 de vigor por
+                  turno, só pode ser ativo uma vez no dia.</span> Lunarios estão sempre sendo perseguidos por alguém.
+                Dificuldade: 90<= </p>
+
+                  <hr>
+            </div>
+
+            <div id="oni">
+              <h3 class="wiki_subtitle">Oni</h3>
+              <img src="imagens/oni.gif" alt="oni">
+              <p>Oni são criaturas grandes, são extremamente fortes e resistentes, com uma capacidade física além de
+                qualquer outra criatura. Sua aparência é intimidadora, com chifres e corpo extremamente forte.
+                <span>Onis
+                  recebem +12 de força , resistência, vigor e vitalidade, porém tem -10 em inteligência e agilidade,
+                  além
+                  disso Onis tem desvantagem em qualquer tipo de diplomacia recebendo -15 de carisma em testes de
+                  carisma
+                  com exceção de intimidação, em intimidação Onis recebem +8.</span>
+                Oni também possuem uma sede e fome anormal, precisando comer 2 vezes mais que as outras especies e
+                consumir bebidas alcoolicas uma vez no dia, não recebem fadiga após acabar o efeito da bebida. Caso não
+                beba nada alcoolico, o Oni fica com fadiga e irritado. Oni estão sempre sendo perseguidos por alguém.
+                Dificuldade: 95<= </p>
+
+                  <hr>
+            </div>
+
+            <div id="mutante">
+              <h3 class="wiki_subtitle">Mutante</h3>
+              <img src="imagens/mutante.gif" alt="mutante">
+              <p>Como experimentos genéticos, mutantes são super-humanos, recebendo +6 em 3 atributos de sua escolha.
+                Mutantes não são nutridos de tantos sentimentos igual as outras especies, por conta disso tem carisma
+                nulo. Mutantes também possuem um fator linhagem, quando o fator linhagem desperta (situacional), o
+                mutante <span>é capaz de recuperar ferimentos e vigor mais rápido, podendo gastar ação padrão para
+                  recuperar 5% de HP
+                  e
+                  vigor.</span>
+
+                Mutantes também possuem uma modificação corporal a mais de acordo com a fonte da sua mutação (definido
+                pela história, com aprovação do mestre)
+                Dificuldade: 90<= </p>
+
+                  <hr>
+            </div>
+
+            <div id="tres_olhos">
+              <h3 class="wiki_subtitle">Três Olhos</h3>
+              <img src="imagens/tres_olhos.gif" alt="tres_olhos">
+              <p>Vindo da tribo dos Três Olhos, essa é uma das raças mais enigmática entre todas, tanto por estarem nas
+                mesmas condições que os lunarios quanto pelas suas capacidades. Pouco se sabe sobre eles, a maioria das
+                pessoas sequer sabem da existência desses seres. <span>Recebem +12 em percepção e nenhum debuff.</span>
+                Sua
+                habilidade
+                racial é seu terceiro olho, quando um membro dessa tribo desperta o terceiro olho, passa a conseguir
+                enxergar as memórias de quem eles tocam, também possuem a capacidade de ler poneglyph e a capacidade
+                inata
+                de haki da observação. Três-olhos que despertaram passam a escutar "A Voz de Todas as Coisas".
+                Dificuldade: 90<= </p>
+
+                  <hr>
+            </div>
+
+          </div>
+
+          <!-- AKUMA NO MI -->
+          <div class="akuma" id="akuma">
+            <h2 class="wiki_subtitle">Akuma no Mi</h2>
+            <img src="imagens/akumanomi.gif" alt="akuma">
+            <p> Akuma no Mi são as frutas que dão poderes a quem as come, é dito que a fonte desses poderes é vinda de
+              um
+              demônio que mora na fruta, mas isso não passa de uma lenda. Se sabe apenas que ao comer uma Akuma no Mi o
+              mar
+              passa a te odiar, com você perdendo a capacidade de nadar, além de que se tentar comer duas Akuma no Mi
+              você
+              morre.
+
+              <span>Akuma no Mi são divididas em 3 tipos, Paramecia, Zoan e Logia.</span>
+              <br>
+              <br>
+              <span>Paramecia:</span> São o tipo mais abrangente entre as três, permitem que altere sua estrutura
+              corporal ou
+              ambiente,
+              liberar substâncias do seu corpo e as manipular, dentre muitas outras capacidades. No geral o mais correto
+              a
+              se dizer é que uma paramecia é qualquer fruta que não te transforme em animais (como a zoan) ou em um
+              elemento
+              (como a Logia).
+              <br>
+              <br>
+
+              <span>Zoan:</span> São as frutas que dão a capacidade de se transformar em um animal. Zoan possuem
+              subdivisões que são
+              da
+              seguinte forma
+
+              Zoan normal- Animais normais e fáceis de se encontrar, como um touro, tigre, girafa, etc
+
+              Zoan ancestral - Animais pré-históricos, em sua maioria dinossauros. É relativamente raro comparada com as
+              zoans normais, apesar de no Novo Mundo e Grand Line serem mais facilmente encontradas.
+
+              Zoan mítica- Animais mitológicos como dragões, kitsune, figuras divinas e afins. São o tipo mais raro não
+              apenas entre as zoan mas entre todas as frutas, sendo incomuns até na Grand Line.
+
+              Uma caracteristica das Zoan é a diferença entre os tipos de animais. Zoan ancestral e normais possuem
+              diferença entre animais carnivoros e herbivoros, respectivamente costumam ter um costuma ter maior
+              capacidade
+              ofensiva enquanto o outro uma capacidade defensiva maior.
+              <br>
+              <br>
+              <span>Logia:</span> O tipo elemental entre as frutas, alteram a sua estrutura corporal te transformando no
+              próprio
+              elemento, como fogo, lava, gás, raio, planta, afins. O corpo de um usuário do tipo Logia é intangivel para
+              ataques físicos, ao menos que seja usado haki do armamento. Logia é considerado por muitos o tipo mais
+              raro
+              e
+              poderoso entre os 3, apesar de ser mais fácil encontrar uma logia do que uma Zoan mítica.
+
+              Outra caracteristica entre todas as frutas é que existem sim frutas mais fortes do que outras, até mesmo
+              quando tem a mesma ideia. Situações assim são consideradas como se uma fruta fosse uma versão superior da
+              outra, como por exemplo a Magu Magu no Mi (fruta da lava) é uma versão superior da Mera Mera no Mi (fruta
+              do
+              fogo).
+
+              Cada fruta possuí uma caracteristica única e receberá os buffs de acordo com o mestre. No nível 0 sua
+              fruta
+              não lhe dará uma versatilidade muito grande de uso, mas conforme evoluir ela, poderá utilizar habilidades
+              ainda mais avançadas.
+
+              Cada despertar se dá em situações únicas e diferentes, e principalmente em situações desconhecidas para
+              seus
+              usuários, quando chegar o momento o mestre vai narrar o acontecimento.
+              <hr>
+            </p>
+          </div>
+
+          <!-- HAKI -->
+          <div class="haki" id="haki">
+            <h2 class="wiki_subtitle">Haki</h2>
+            <img src="imagens/haki2.gif" alt="haki">
+            <p>Haki é a capacidade de sentir a energia espiritual, usar a força vital e manifestar sua vontade no mundo.
+              Existem 3 tipos de haki:</p>
+            <ul class="ul_haki">
+              <li><span>Haki do Armamento: </span>É a capacidade de controlar a sua força vital ao ponto de formar uma
+                armadura invisivel em volta do seu corpo, pode também ser usado em objetos como espadas, armas, bastões
+                e
+                afins. É o único modo de se acertar usuários de logia, além de ser a única forma de causar dano
+                significativo por impacto em usuários de akuma no mi.
+                Possui os seguintes níveis:
+                <ul>
+                  <li><span>Básico - </span>Uma armadura invisivel em volta do corpo, permite causar um dano maior em
+                    usuários de akuma no mi com capacidade de amortecer impacto (como borracha), não consegue acertar
+                    usuários do tipo Logia. Recebe o modificador de FDV em dano e defesa.</li>
+                  <li><span>Médio - </span>Seu haki se manifesta visualmente tornando negra a área em que está sendo
+                    usado. Adquiri a capacidade de acertar usuários do tipo Logia. Vai do nível 5 ao 15, recebendo o
+                    modificador de FDV e +5 nas rolagens de dano e defesa por nível. Gasta 5 de vigor por turno ativo.
+                  </li>
+                  <li><span>Avançado - </span>Desbloqueado apenas com treinamento especial, requer nível 20 em haki e
+                    Força de Vontade >= 50. Gasta 5 de vigor por uso.</li>
+                </ul>
+                <p class="ul_p"><span>Haki do armamento é desbloqueado quando seu atributo de Força de Vontade for igual
+                    ou maior que 30 e
+                    sua resistência ou força>=25.</span> </p>
+              </li>
+
+              <li><span>Haki da Observação: </span> Te da a capacidade de sentir a energia espiritual do mundo,
+                permitindo
+                sentir ataques que vem até você, enxergar as coisas muito mais longe entre outros efeitos.
+                Possui os seguintes níveis:
+                <ul>
+                  <li><span>Básico - </span>Possui a capacidade de sentir os sentimentos das pessoas e sentir o
+                    movimento
+                    a sua volta, recebe o modificador de FDV em percepção e +1 em esquivas por nível. O nível vai do 0
+                    ao
+                    5. Gasta 5 de vigor por uso.</li>
+                  <li><span>Médio - </span>Seu Haki passa a enxergar melhor as coisas em sua volta, conseguindo perceber
+                    tudo em um raio de 5 metros de você, aumentando em 1 metro por nível. Também passa a receber +5 em
+                    esquiva por nível e +6 em percepção por nível. O nível vai do 5 ao 15. Gasta 5 de vigor por uso.
+                  </li>
+                  <li><span>Avançado - </span>Consegue enxergar o futuro e a aura das pessoas, é despertado apenas em
+                    situações extremas quando sua força de vontade >=50. Recebe +5 de esquiva por nível e +7 por nível
+                    em
+                    qualquer tipo de acerto. Requer nível 40 em haki. Gasta 5 de vigor por uso.</li>
+                  <p class="ul_p"> <span>Haki da observação é desbloqueado quando seu atributo de força de vontade for
+                      igual ou maior que 30
+                      e
+                      sua percepção >= 25.</span></p>
+                </ul>
+              </li>
+
+              <li><span>Haki do Rei: </span>É a manifestação da vontade de conquistar o mundo, poucos conseguem
+                dispertar
+                essa vontade, algumas pessoas em raros casos já nascem com essa capacidade. É a principal fonte de força
+                dos mais fortes no mundo, utilizando ele de muitas maneiras.
+                Possui os seguintes níveis:
+                <ul>
+                  <li><span>Básico - </span>Seu Haki do Rei não pode ser controlado, é manifestado apenas em algumas
+                    situações, quando ocorrem, faça um teste de FDV contra as do que estão em sua volta, se falharem
+                    todos
+                    em um raio de 5 metros ficam desacordados por 2 turnos. Necessário Força de Vontade = 30 para
+                    liberar.
+                  </li>
+                  <li><span>Médio - </span>Você pode controlar e usar para intimidar ou reprimir a vontade daqueles na
+                    sua
+                    volta. Recebe um bônus do mod de FDV em intimidação, para usar em área faça um teste de FDV, se quem
+                    estiver em um raio de até 5 metros falhar, caso você tire um dado maior com a diferença de 1 a 10,
+                    os
+                    alvos ficam desacordados por 3 turnos, se a diferença for de 10 a 20 ficam por 5 turnos, se for 20
+                    ou
+                    mais então os alvos ficam desacordados até o fim do combate ao menos que o levantem. O alcance para
+                    usar aumenta em 5 metros a cada 5 pontos no atributo de FDV. Gasta 10 de vigor por uso
+                    Força de Vontade = 40 para liberar.</li>
+                  <li><span>Avançado - </span> Seu haki passa a afetar fisicamente o mundo, com você conseguindo
+                    utilizar
+                    ele de forma ofensiva em seus ataques ao ponto de que sua arma sequer precisa encostar no alvo.
+                    Acrescente seu mod de FDV no dano, consegue acertar até 2 metros de distância de você, aumentando em
+                    1
+                    metro a cada 10 ponto em FDV. Gasta 10 de vigor por uso.
+                    Força de Vontade = 50 para liberar.</li>
+                </ul>
+              </li>
+            </ul>
+            <hr>
+          </div>
+
+          <!-- ESPECIALIZAÇÕES -->
+          <div class="especializacoes" id="especializacoes">
+            <h2 class="wiki_subtitle">Especializações</h2>
+            <p>Especialização consiste em uma área de conhecimento que seu personagem decidiu focar.
+              Cada área de conhecimento diferente possuí sua própria árvore de conhecimento dos quais cada um vai dar um
+              bônus em algum atributo ou alguma ação, por exemplo:
+
+              Um timoneiro teria como base um bonus maior em força, além de bonus maior para realizar uma ação onde
+              precise pilotar o navio e realizar alguma manobra complicada.</p>
+            <p>Existem as seguintes áreas de especialização para se seguir;</p>
+            <!-- Navegador, Timoneiro, Músico, Médico,
+          combate com Mãos Livres, combate com Lâminas, Armas Contundentes,  Cozinheiro, Engenheiro, Atirador, Historiador, especialista em Haki. -->
+            <ul class="ul_esp">
+              <li><a href="#navegador">Navegador</a></li>
+              <li><a href="#timoneiro">Timoneiro</a></li>
+              <li><a href="#musico">Músico</a></li>
+              <li><a href="#medico">Médico</a></li>
+              <li><a href="#combate_maos">Combate com Mãos Livres</a></li>
+              <li><a href="#combate_laminas">Combate com Lâminas</a></li>
+              <li><a href="#armas_contundentes">Armas Contundentes</a></li>
+              <li><a href="#cozinheiro">Cozinheiro</a></li>
+              <li><a href="#engenheiro">Engenheiro</a></li>
+              <li><a href="#atirador">Atirador</a></li>
+              <li><a href="#historiador">Historiador</a></li>
+              <li><a href="#especialista_haki">Especialista em Haki</a></li>
+              <li><a href="#ferreiro">Ferreiro</a></li>
+            </ul>
+            <p>Cada área possui uma árvore de conhecimento, um foco maior em uma parte da área.</p>
+
+            <!-- NAVEGADOR -->
+            <div class="navegador">
+              <h3 class="sub_subtitle" id="navegador">Navegador</h3>
+              <img src="imagens/navegador.gif" alt="navegador">
+              <p>Navegadores são mestres das águas, seu entendimento dos mares podem levar qualquer pessoa a qualquer
+                canto do mundo, por isso começam com +3 em inteligência e +2 em percepção, podendo escolher os seguintes
+                conhecimentos:</p>
+
+              <ul class="ul_classes">
+                <li><span>Metereológico - </span>Conhecimento metereológico permite que o navegador consiga entender
+                  fenômenos naturais e
+                  saber qual é a melhor atitude para se tomar perante a situação, recebendo um bônus de +5 em rolagens
+                  que
+                  envolvam clima.</li>
+                <li><span>Geográfico - </span>Conhecimento geográfico permite que o navegador entenda não apenas de como
+                  navegar no mar,
+                  como também reconhecer diversidades do terreno para continuar a exploração por terra. Esse
+                  conhecimento
+                  te dá +5 em rolagens que envolvam terrenos. </li>
+                <li><span>Marítmo - </span>Conhecimento marítimo permite que o navegador entenda mais sobre o mar,
+                  entendendo sobre
+                  correntezas e a diferença entre os mares. Esse conhecimento te dá +5 em rolagens que envolvam o mar.
+                </li>
+                <li><span>Cartográfico - </span>Conhecimento cartográfico permite que você não apenas consiga entender,
+                  replicar ou
+                  desenhar mapas apenas vendo o terreno, como também te torna uma bussola humana, nunca ficando perdido,
+                  recebendo +5 em rolagens para localização, além de conseguir entender e memorizar todos os tipos de
+                  mapa. </li>
+              </ul>
+
+              <p>BONUS: O navegador que tiver todas as áreas de conhecimento aumenta seu bônus para +10 , se tornando um
+                mestre na área.</p>
+              <hr>
+            </div>
+
+            <!-- TIMONEIRO -->
+            <div class="timoneiro">
+              <h3 class="sub_subtitle" id="timoneiro">Timoneiro</h3>
+              <img src="imagens/timoneiro.gif" alt="timoneiro">
+              <p>Timoneiros são especialistas em pilotagem. Recebem +2 de força e +3 de resistência</p>
+              <ul class="ul_classes">
+                <li><span>Marítmo - </span>Conhecimento marítimo permite que o timoneiro entenda como lidar com as
+                  adversidades do mar, entendendo sobre correntezas e diferenças entre os mares. Esse conhecimento te dá
+                  +5 em rolagens que envolvam o mar. </li>
+                <li><span>Pilotagem - </span> Timoneiros são mestres da pilotagem, podendo enfrentar grandes
+                  diversidades
+                  do ambiente sem muitos problemas quando precisam. Recebem +5 acumulativos em rolagens para pilotar e
+                  fazer monobras (esse conhecimento pode evoluir, podendo ir do 1 ao 5). </li>
+              </ul>
+              <hr>
+            </div>
+
+            <!-- MÚSICO -->
+            <div class="musico">
+              <h3 class="sub_subtitle" id="musico">Músico</h3>
+              <img src="imagens/musico.gif" alt="musico">
+              <p>Músicos sabem como encantar um público, ganhando +5 em carisma</p>
+              <ul class="ul_classes">
+                <li><span>Instrumentos - </span>A principal habilidade de um músico é entender sobre instrumentos,
+                  sabendo
+                  tocar um ou mais instrumentos. Podendo utilizar de seus instrumentos para encantar as pessoas rolando
+                  +5
+                  em testes de carisma que utilizem seu instrumentos (acumulativo, ganhando +2 por nível, podendo ir do
+                  1
+                  até 3)</li>
+                <li><span>Sentimentos - </span>Música e sentimentos são como um, músicos conseguem entender o sentimento
+                  das pessoas guiando multidões para sentirem o que eles querem transmitir, fazendo um teste de carisma
+                  contra o carisma ou força de vontade dos alvos (situacional), caso ganhe no teste, o músico pode impor
+                  uma condição no alvo.</li>
+                <li><span>Prestígio Social - </span>Músicos são aclamados pelas pessoas, podendo ter grande
+                  reconhecimento
+                  social, fazendo com que as pessoas concedam a eles algumas coisas mais facilmente, permitindo que
+                  entrem
+                  em locais mais exclusivos ou até ganhar mais itens e quem sabe dinheiro. O efeito desse conhecimento
+                  pode diminuir a CD de testes sociais, conseguir informações mais facilmente, barganhar preços
+                  melhores,
+                  conseguir acesso em lugares mais exclusivos, entre outras questões que envolvam seu carisma.</li>
+              </ul>
+              <hr>
+            </div>
+
+            <!-- MÉDICO -->
+            <div class="medico">
+              <h3 class="sub_subtitle" id="medico">Manipulador (médico/cientista)</h3>
+              <img src="imagens/medico.gif" alt="medico">
+              <p>Manipuladores possuem um grande conhecimento cientifico quando se trata de químicos e corpo humano,
+                ganhando +5 de inteligência.</p>
+              <ul class="ul_classes">
+                <li><span>Biológico - </span>Conhecimento biológico se divide nos seguintes conhecimentos
+                  Fisiologia e anatomia - Você sabe onde fica cada órgão e cada parte do corpo, ganhando bonus de +5
+                  acumulativo em rolagens de medicina.</li>
+                <li><span>Plantas - </span>Você entende de plantas e sabe suas funções, conseguindo identificar quais
+                  plantas são venenosas,
+                  quais são comestiveis, quais são medicinais, etc. Ganha +5 em rolagens de sobrevivencia para
+                  identificar
+                  alimentos e plantas.</li>
+                <li><span>Vírus e Bactérias - </span>Você entende de vírus, bactérias e enfermidades, você consegue
+                  identificar cada uma
+                  dessas coisas com maior facilidade, recebendo bônus de +5 acumulativo para isso.</li>
+                <li><span>Químico - </span>Conhecimento químico se divide nos seguinte conhecimentos.</li>
+                <li><span>Farmacêutico - </span>Esse conhecimento permite que você possa fabricar drogas com mais
+                  facilidade, podendo rolar
+                  +5 acumulativos na criação de drogas.</li>
+                <li><span>Químico Nuclear</span>Conhecimento em química nuclear permite que tenha conhecimentos tanto em
+                  medicina nuclear
+                  e energia nuclear, permitindo usar de radiações e compreender os atomos, podendo usar desse
+                  conhecimento
+                  para conseguir desde tirar um raio x até compreender o funcionamento de fissões nucleares.</li>
+              </ul>
+              <hr>
+            </div>
+
+            <!-- MÃOS LIVRES -->
+            <div class="maos_livres">
+              <h3 class="sub_subtitle" id="combate_maos">Combate com Mãos Livres</h3>
+              <img src="imagens/maos_livres.gif" alt="maos_livres">
+              <p class="link_esp">Lutadores que utilizam mãos livres são especialistas em combate desarmado, recebem
+                conhecimento em 2
+                estilos, podendo pegar 1 habilidade de cada, ou se preferir pode focar apenas em 1 estilo tendo 3
+                movimentos dela. (Para ver a lista de artes marciais clique <a href="#artesmarciais">AQUI</a>.)</p>
+              <hr>
+            </div>
+
+            <!-- COMBATE COM LÂMINAS -->
+            <div class="laminas">
+              <h3 class="sub_subtitle" id="combate_laminas">Combate com Lâminas</h3>
+              <img src="imagens/laminas.gif" alt="laminas">
+              <p class="link_esp">Especialista em lâminas são capazes de lutar utilizando espadas, machados, lanças e
+                marciais, escolha
+                uma
+                escola pare seguir. (Clique <a href="#laminas">AQUI</a> para ver cada escola).</p>
+              <hr>
+            </div>
+
+            <!-- ARMAS CONTUNDENTES -->
+            <div class="contundentes">
+              <h3 class="sub_subtitle" id="armas_contundentes">Armas Contundentes</h3>
+              <img src="imagens/armas_contundentes.gif" alt="armas_contundentes">
+              <p>Combatentes que utilizam de armas contundentes sabem usar martelos, maças, porretes, clavas e armas
+                marciais, podendo evoluir a especialização em cada arma, <span>começando com +5 em força, ganhando mais
+                  +2 por
+                  nível. </span> Armas contundentes possuem a capacidade de destruição de objetos aprimorada, ganhando
+                +7 em
+                rolagens de força quando acertar um objeto (armaduras e embarcações contam).</p>
+              <hr>
+            </div>
+
+            <!-- COZINHEIRO -->
+            <div class="cozinheiro">
+              <h3 class="sub_subtitle" id="cozinheiro">Cozinheiro</h3>
+              <img src="imagens/cozinheiro.gif" alt="cozinheiro">
+              <p>Cozinheiros são os reponsáveis pela fonte de força primordial em qualquer equipe, a comida,
+                <span>ganham +3
+                  de
+                  resistência e
+                  +2 de Dex .</span> Cozinheiros possuem os seguintes conhecimentos:</p>
+              <ul class="ul_classes">
+                <li><span>Sobrevivência - </span>Esse conhecimento permite com que você consiga desde improvisar
+                  utensilios até fazer fogo com duas pedras, ganhando +8 em testes de sobrevivência.</li>
+                <li><span>Alimentos - </span>Conhecimento em alimentos permite que você saiba as propriedades daquele
+                  alimento, desde sabe se ele é nutritivo até saber se é venenoso. Além disso para cozinhar você ganha
+                  um
+                  bônus de +10 no preparo do alimento, caso tire um critico, os buffs recebido por aquele alimento
+                  duplicam.</li>
+              </ul>
+              <p>Por estarem em constante pressão em uma cozinha, cozinheiros experientes tem uma resilência física
+                aprimorada, ganhando +10 em vigor e +3 em resistência.</p>
+              <hr>
+            </div>
+
+            <!-- ENGENHEIRO -->
+            <div class="engenheiro">
+              <h3 class="sub_subtitle" id="engenheiro">Engenheiro</h3>
+              <img src="imagens/engenheiro.gif" alt="engenheiro">
+              <p>Engenheiros são os mestres construtores <span>ganham +5 de inteligência</span> , podendo seguir por
+                dois caminhos.
+              </p>
+
+              <h4>Bélico</h4>
+              <p>Pode construir, reparar e aprimorar armas, suas seguintes habilidades são:</p>
+              <ul class="ul_classes">
+
+                <li><span>Reparar: </span>Possuí a capacidade de reparar armas que estejam danificadas em 3 níveis
+                  diferentes.
+                  <ul>
+                    <li><span>- Pouco dano </span>Pode reparar como ação livre armas que sofreram pouco dano.</li>
+                    <li><span>- Dano moderado </span>Pode reparar armas que sofreram dano moderado utilizando da ação
+                      completa.</li>
+                    <li><span>- Dano alto </span>A arma sofreu muito dano e está quase destruída, é necessário gastar
+                      2
+                      turnos para reparar a arma, além de precisar do material da arma para o reparo.</li>
+                  </ul>
+                </li>
+                <br>
+
+                <li><span>Construir: </span>Capacidade de construir armas, desde armas de fogo pequenas até bombas. Suas
+                  construções precisam do material que será utilizado, tempo para ser construído e conhecimento
+                  necessários, sendo categorizados da seguinte maneira:
+                  <ul>
+                    <li><span>- Armas pequenas </span>Pode construir armas pequenas como pistolas, estilingues pequenos,
+                      etc. Gasta 2 turnos para construir a arma enquanto em combate, fora de combate pode construir
+                      livremente.</li>
+                    <li><span>- Armas médias </span>São armas médias desde seu peso até sua complexidade, sendo
+                      considerados metralhadoras, canhões médios e armas tecnologicas(laser pequeno e armas de choque
+                      pequenas). São gastos 6 turnos para serem feitos em combate, fora de combate demanda cerca de 1
+                      hora
+                      para ser feito.</li>
+                    <li><span>- Armas grandes </span>Armas grandes são complexas e demandam grande esforço, sendo
+                      considerados canhões grandes, lança granadas, bazucas, explosivos, armas tecnologicas. Não pode
+                      ser
+                      construído em combate, demandando cerca de 5 horas até mais de um dia dependendo da complexidade
+                      da
+                      arma. </li>
+                  </ul>
+                </li>
+                <br>
+
+                <li><span>Aprimorar Armas: </span>Armas podem ser aprimoradas com novas tecnologias ou materias,
+                  dependendo de sua complexidade demandará mais tempo ou mais materiais.
+                  <ul>
+                    <li><span>- Básico </span>Melhora básica consiste na troca de um material não muito complicado de se
+                      trabalhar, ou em uma melhora mecânica não muito complexa. Gasta 1 turno em combate, além de
+                      precisar
+                      do material que vai ser utilizado, fazendo um teste da proeficiência.</li>
+                    <li><span>- Médio </span>Melhora média consiste na troca de um material um pouco complicado de se
+                      trabalhar ou uma melhora mecânica complexa. Não pode ser usado em combate, além de precisar do
+                      material que vai ser utilizado, fazendo teste de proeficiência para realizar a ação.</li>
+                    <li><span>- Avançado </span>Melhora avançada consiste no uso de um material complicado de se
+                      trabalhar, além de uma mecânica muito mais elaborada. Não pode ser usado em combate, demorando
+                      algumas horas ou dias até ficar pronto, fazendo teste de proeficiência para realizar a ação.</li>
+                  </ul>
+                </li>
+              </ul>
+              <br>
+
+              <h4>Construtor</h4>
+              <p>Pode construir estruturas como navios, reatores, veículos, etc. Construtores tem as seguintes
+                habilidades:</p>
+              <ul class="ul_classes">
+
+                <li><span>Construir: </span>Construir permite que construa um objeto de baixa, média, alta complexidade,
+                  mudando material ou tecnologia.
+                  <ul>
+                    <li><span>- Baixa </span>Constrói um objeto simples, como uma cadeira, mesa, jangada, similares.
+                      Pode
+                      ser feito em combate como ação de movimento, precisando dos materiais necessários para isso.</li>
+                    <li><span>- Média </span>Constrói um objeto de complexidade média, como uma escultura, instrumentos,
+                      geradores de energia médio, similares. Não podem ser feitos em combate, precisam dos matériais
+                      necessários para construir o objeto, demora cerca de algumas horas para concluir.</li>
+                    <li><span>- Alta </span>Constrói um objeto de alta complexidade, como um barco, casas, reatores de
+                      energia complexos, similares. Precisa não apenas dos matérias, como também demanda dias para que
+                      termine a construção, em alguns casos sendo necessário uma planta do que vai ser construído.</li>
+                  </ul>
+                </li>
+                <br>
+                <li><span>Reparar: </span>Reparar permite que conserte um objeto já construído, sendo possível reparar
+                  baixo, médio ou alto dano causado a ele.
+                  <ul>
+                    <li><span>- Dano baixo </span>Pode reparar o objeto sem muita dificuldade, não sendo necessário o
+                      material de origem, podendo até mesmo improvisar. Gasta uma ação de movimento para isso quando em
+                      combate.</li>
+                    <li><span>- Dano médio </span>Pode reparar o objeto com um pouco mais de esforço, pode ser usado
+                      material diferente do original, porém sua qualidade será afetada. Gasta 2 turnos inteiros para
+                      consertar caso usado em combate.</li>
+                    <li><span>- Dano alto </span>Pode reparar o objeto com muito esforço, pode ser usado material
+                      diferente do original, porém sua qualidade será afetada, podendo ser tanto inutilizado quanto
+                      ocasinar em problemas maiores. Não pode ser usado em combate, demandando horas, dias ou até meses
+                      para se concluir. </li>
+                  </ul>
+                </li>
+                <br>
+                <li><span>Aprimorar: </span>Permite que aprimore um objeto já criado previamente, sendo possível
+                  aprimoramentos baixos, médios e avançado.
+                  <ul>
+                    <li><span>- Aprimoramento baixo </span>Aprimoramento baixo permite que faça uma pequena melhora no
+                      objeto, uma substuíção de material como trocar uma liga pequena, uma amarra de um material,
+                      similares. Pode ser feito como ação de movimento em combate.</li>
+                    <li><span>- Aprimoramento médio </span>Aprimoramento médio permite que faça uma melhora média no
+                      objeto, como uma mudança de fonte de energia, melhora a potência, aprimorar a capacidade de uma
+                      estrutura, similares. Pode ser feito apenas fora de combate, precisando de uma analise prévia de
+                      inteligência, após a analise é necessário teste de proeficiência para que consiga realizar o
+                      aprimoramento.</li>
+                    <li><span>- Aprimoramento alto </span> Aprimoramento avançado permite que faça uma melhora avançada
+                      no
+                      objeto, como uma fonte de energia mais tecnologica, trocar o material para um mais resistente,
+                      melhorar a capacidade dele em níveis mais altos. Não pode ser usado em combate, alguns
+                      aprimoramentos precisam de uma planta antes, além de demorar cerca de horas ou dias.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+              <h4>Especiais</h4>
+              <p>Após um alto nível de conhecimento em engenharia, um engenheiro é capaz de usar seus conhecimentos para
+                criar construções e armas ainda mais poderosas. Para tal feito é necessário que o engenheiro já esteja
+                no
+                nível 10; conseguindo usar seu conhecimento bélico e construtor avançado; tenha em posse a planta do
+                objeto que vai ser construído; um laboratório e ferramentas necessárias; dedicar cerca de meses para
+                concluir a tarefa, na maioria das vezes demanda cerca de anos;possivelmente conhecimento em outra área
+                dependendo do que vai ser construído.
+                <br>
+                Alguns exemplos de objetos especiais que poderiam ser feitos são:
+                <br>
+                <span>Bombas Nucleares, Mecha, Reatores de energia gigantes, utilizar de tecnologia perdida e armas
+                  extremamente tecnológicas.</span>
+              </p>
+              <hr>
+            </div>
+
+            <!-- ATIRADOR -->
+            <div class="atirador">
+              <h3 class="sub_subtitle">Atirador</h3>
+              <img src="imagens/atirador.gif" alt="atirador">
+              <p class="link_esp">Atiradores são combatentes a longa distância, especialistas em controle do combate são
+                os que comandam
+                a
+                guerra. Atiradores podem seguir as seguintes escolas: Armas de Fogo; Projéteis; Estilingues.
+                Para ver mais detalhadamente clique <a href="#atirador">AQUI</a> .
+              </p>
+              <hr>
+            </div>
+
+            <!-- HISTORIADOR -->
+            <div class="historiador">
+              <h3 class="sub_subtitle" id="historiador">Historiador</h3>
+              <img src="imagens/historiador.gif" alt="historiador">
+              <p>Historiadores são os que possuem grande parte das verdades nesse mundo, temidos por qualquer um que
+                tenta
+                esconder os acontecimentos do passado, tem +3 de inteligência e +2 de percepção.
+                <br>
+                Historiadores possuem os seguintes conhecimentos:
+              </p>
+              <ul class="ul_esp">
+                <li><span>Arqueologia - </span>O conhecimento de arqueologia permite que o historiador seja especialista
+                  sobre o passado da humanidade, conhecendo sobre idiomas, esculturas, construções e civilazações
+                  antigas.
+                  Sempre que for realizar um teste desse conhecimento recebe +5 na rolagem. (acumulativo, ganhando +2 de
+                  bonus por nível)</li>
+                <li><span>Antropologia - </span>O conhecimento em antropologia permite que o historiador seja
+                  especialista
+                  sobre as civilizações atuais, conhecendo sobre culturas diversas, costumes locais, idiomas diferentes.
+                  Sempre que for realizar um teste desse conhecimento rece +5 na rolagem. (acumulativo, ganhando +2 de
+                  bonus por nível)</li>
+                <li><span>Historiador Mestre - </span>Caso tenha pelo menos 2 pontos em cada conhecimento ganha +2 de
+                  bônus nas rolagens.</li>
+              </ul>
+              <hr>
+            </div>
+
+            <!-- ESPECIALIZAÇÃO ÚNICA-->
+            <div class="especializacao_unica">
+              <h2 class="wiki_subtitle">Especialização Única</h2>
+              <!-- HAKI-->
+              <div class="haki">
+                <h3 class="sub_subtitle" id="especialista_haki">Especialista em Haki</h3>
+                <img src="imagens/haki.gif" alt="haki">
+                <p><span>Especialista em Haki: </span>Especialistas em haki são pessoas que decidiram dedicar suas vidas
+                  unicamente ao treinamento de haki. Não costumam ter técnicas de luta muito avançadas nem um amplo
+                  conhecimento de outras áreas, porém são como gurus na utilização do haki. Conhecendo sobre cada
+                  funcionalidade de cada um dos 3 tipos de haki, dizem que até mesmo pode existir um especialista em
+                  haki
+                  que entende de outras formas de poderes.
+
+                  Um especialista em haki pode utilizar haki do armamento e da observação com perfeição, se tiver haki
+                  do
+                  rei também é capaz de usar. Ganhando +10 em qualquer ação utilizando esses haki, além de conseguir
+                  usar
+                  previamente a forma avançada (ATT 15) e quebrarem o limitador de haki, podendo expandir até 5 níveis a
+                  mais, sendo que esse limitador de 5 níveis adicionais pode também ser quebrados em condições especiais
+                  (critérios do mestre).
+                  <br>
+                  <span>CONDIÇÕES: </span>Não pode ter mais do que 3 níveis em outra especialização, ter pelo menos 20
+                  ponto no atributo FDV, depois que esse talento for pego não pode se ter mais nenhuma especialidade
+                  além
+                  da anterior, caso tenha 2 especializações deve abrir mão de uma para pegar essa não sendo possível
+                  trocar futuramente depois.
+                </p>
+              </div>
+
+              <!-- FERREIRO-->
+              <div class="ferreiro">
+                <h3 class="sub_subtitle" id="ferreiro">Ferreiro</h3>
+                <img src="imagens/ferreiro.gif" alt="ferreiro">
+                <p><span>Ferreiro: </span>Um ferreiro é alguém que se dedicou de corpo e alma para trilhar o caminho da
+                  forja, sendo os maiores criadores de armas brancas e armaduras, suas criações são únicas podendo ter
+                  grandes capacidades destrutivas ou protetivas. Ferreiros conseguem trabalhar com qualquer tipo de
+                  minério, suas criações recebem um bônus maior do que feita por outras pessoas tendo um bonus de +10 no
+                  dano ou defesa. Suas forjas possuem 3 níveis, básico, intermediário e avançado e lendário </p>
+                <ul class="ul_esp">
+                  <li><span>Básico - </span>Materiais simples e armas simples, demoram algumas horas para ficar pronto e
+                    dão um bônus +10.</li>
+                  <li><span>Intermediário - </span>Materiais mais complexos e armas mais bem trabalhadas, demoram alguns
+                    dias para ficar pronto e dão bônus de +20.</li>
+                  <li><span>Avançado - </span>Materiais e armas dificeis de se trabalhar, demoram dias ou semanas para
+                    ficarem prontos, dão bônus de +30.</li>
+                  <li><span>Lendário - </span>Materiais extremamente raros e armas extremamente únicas, demoram um tempo
+                    inderteminado para ficarem prontas, dão um bônus de +50.</li>
+                </ul>
+                <p><span>CONDIÇÕES: </span>Ferreiros não podem ter nenhuma outra especialização.</p>
+
+                <hr>
+              </div>
+            </div>
+
+            <div class="multi_especializacoes">
+              <h3 class="sub_subtitle" id="multi_especializacoes">Multi-especializações</h3>
+              <p>Inicialmente todos começaram com apenas uma especialização, podendo pegar outra no próximo nível, que
+                será condizente de acordo com sua história. Sendo assim, se na sua história você diz que é um engenheiro
+                que sabe lutar com arma de contusão, então deve escolher um dos dois para começar, no proximo nível
+                podendo pegar o outro, mas em nenhum caso pegar especialização em lâminas por exemplo.
+                <br>
+                <br>
+
+                Caso tente usar o movimento ou conhecimento de uma especialização da qual você não tem aptidão, recebe
+                -15
+                na ação.
+                <br>
+                <br>
+
+                A segunda especialização escolhida vai ter metade dos buffs que ela fornece. Por exemplo, se a
+                especialização da +5 em acerto, caso você pegue ela como secundária então vai receber apenas 2 de
+                acerto,
+                já que metade de 5 é 2,5 e sempre se arredonda para baixo.
+                <br>
+                <br>
+                Uma terceira especialização (ou mais) pode ser adquirida, porém apenas em campanha, treinando com um
+                NPC,
+                tentando desenvolver essa habilidade através de algum conhecimento de livros e afins.
+                <br>
+                <br>
+
+                Para as artes marciais, é possível criar novos movimentos quando conseguir todos os movimentos de uma
+                arte
+                marcial, afinal você será mestre nela.
+              </p>
+            </div>
+            <hr>
+          </div>
+
+          <!-- NORMAS DA MESA -->
+          <div class="normas" id="normas">
+            <h2 class="wiki_subtitle">Normas da Mesa</h2>
+            <img src="imagens/normas.gif" alt="normas">
+            <ul class="ul_normas">
+              <li><span>1- RPG não é o anime: </span>Mas por que não consigo fazer isso? no anime X personagem faz...",
+                por mais que o universo seja o mesmo de One Piece, não quer dizer que tudo será igual. Por questões de
+                equilibrar um sistema e ser condizente com um RPG, esqueça a ideia de "Mas o Zoro conseguiu fazer X
+                coisa
+                no começo" "O Sanji em Y parte fez isso", você não é esses personagens.
+              </li>
+              <li><span>2- Tente ser original: </span>Ninguém vai ser punido por falta de criatividade, porém tente
+                criar
+                algo seu ao invés de tentar replicar um personagem que já é da obra, pegar fontes de inspiração de
+                outros
+                animes ou até do próprio One Piece não tem problema, apenas não crie uma replica. Como dito
+                anteriormente,
+                você não é o personagem no anime, se tentar simular um Luffy na mesa você pode acabar se frustrando e
+                não
+                gostando de jogar, então evite.
+              </li>
+              <li><span>3- Seja condinzente: </span>A aventura se inicia no nível 1 em algum dos 4 blue, sendo assim,
+                seja
+                condizente com isso. Ideias como ser general de um exército, Ex-almirante, mestre em arte marciais e
+                afins
+                serão automaticamente rejeitadas. Mas nada te impede de fazer menções na história, como ter sido aluno
+                de
+                um dojo de nitoryu por exemplo.
+              </li>
+              <li><span>4- A ficha tem que ter sentido: </span>Se você colocou na sua ficha que vai começar com
+                determinado conhecimento, então ele deve estar justificado na sua história, por exemplo, se seu
+                personagem
+                for um engenheiro tritão com secundária de karate tritão não faça algo do tipo "meu personagem nasceu na
+                redline, é amigo de todos yonkou e sabe essas coisas porque sim", faça referências na sua história como
+                "Saiu da ilha dos tritões ainda jovem, por brincar com sucatas chamou a atenção de um mecânico local que
+                também era tritão e lhe ensinou karate tritão para se defender".
+              </li>
+              <li><span>5- Não leve as coisas tão a sério: </span>Se algo acontecer com você ou alguém próximo do
+                personagem, não encare isso como coisa pessoal, se lembre que One Piece não é só sobre aventura mas
+                também
+                comédia.
+              </li>
+              <li><span>6- Mas também não seja desagradável: </span>Não é porque não precisa se levar tão a sério que
+                vai
+                chutar o balde e zoar com tudo, não torne o clima da sessão desagradável, e principalmente não tente
+                fazer
+                as coisas apenas com o único pretexto de zoar a sessão, se eu notar que sua única intenção é atrapalhar
+                o
+                grupo vai perder o personagem na hora.
+              </li>
+              <li><span>7- Entenda a ocasionalidade: </span>O sistema é próprio, sendo assim, possui brechas para alguns
+                erros inesperados, entenda que alterações podem ocorrer como buff, nerf, balanceamento e afins.
+              </li>
+              <li><span>8- Meta game é do anti-cristo: </span>Não preciso nem dizer que meta game vai ser punido com
+                meta
+                game, então se usar de meta game pode acontecer de um rei dos mares comer o barco da sua tripulação,
+                quem
+                sabe? :)
+              </li>
+              <li><span>9- No mais, divirta-se: </span>One Piece é aventura, festas e risadas, mesmo que com algumas
+                tragédias, e como diz em uma certa música "No fim só ossos vamos ser, então apenas a vida como conseguir
+                yohohoho".
+              </li>
+            </ul>
+            <img src="imagens/normas2.gif" alt="normas">
+          </div>
+          <hr>
+        </div>
+
+        <!-- SISTEMA DE COMBATE-->
+        <div class="sistema_combate" id="sistema_combate">
+          <h1 class="wiki_title">Sistema de combate</h1>
+          <p>Todas os estilos de luta e condições!</p>
+          <!-- LÂMINAS-->
+          <div class="aprendizado_laminas" id="laminas">
+            <h2 class="wiki_subtitle">Combate com lâminas</h2>
+            <p>Combate com lâminas são todas as aqueles que lutam utilizando algum tipo de arma com corte, seja uma
+              espada, foice, machado, etc. Podem pertencer a alguma escola de algum estilo ou ter aprendido em outras
+              situações.</p>
+
+            <div class="ittoryu">
+              <h3 class="sub_subtitle">Estilo Ittoryu</h3>
+              <img src="imagens/ittoryu.gif" alt="ittoryu">
+              <p>O estilo ittoryu é o estilo de uma espada, ele consiste em ataques únicos e poderosos ao invés de
+                multiplos ataques. Esse estilo deriva diretamente do kendo, uma arte marcial do país de Wano. Treinados
+                nesse estilo tem +8 em força e destreza.
+
+                Requerimentos: treinado no estilo ittoryu, capacidade de usar uma espada, não possuir outro oficio.
+
+                movimentos: Ittoryu: Tsubame Gaeshi, Renzoku Waza, Harai Waza, Nuki Waza, Debana Waza, Katsugi Waza,
+                Tengu
+                Nami.</p>
+              <hr>
+            </div>
+
+            <div class="nitoryu">
+              <h3 class="sub_subtitle">Estilo Nitoryu</h3>
+              <img src="imagens/nitoryu.gif" alt="nitoryu">
+              <p>Estilo Nitoryu é o estilo que utiliza duas espadas, também vindo do país de Wano, tem suas variações ao
+                redor do mundo e é o segundo estilo mais comum de se ver sendo utilizado depois do Ittoryu. Seus ataques
+                consistem em priorizar a quantidade de ataques ao invés de ataques diretos e precisos. Treinados nesse
+                estilo ganham +3 em força e +5 em agilidade.
+
+                Requerimentos: conseguir utilizar duas espadas, treinado por um mestre no estilo duas espadas, não
+                possuir
+                outro oficio.
+
+                Movimentos: Nitoryu: niten ichi, Togen Totsuka, Togen Shirataki, Kirin, Chi no Ame, Enma.</p>
+              <hr>
+            </div>
+
+            <div class="santoryu">
+              <h3 class="sub_subtitle">Estilo Santoryu</h3>
+              <img src="imagens/santoryu.gif" alt="santoryu">
+              <p>O estilo santoryu é o estilo que utiliza 3 espadas, ninguém sabe ao certo onde e como surgiu, porém
+                teorias dizem que pode ter surgido de um espadachim que tentou utilizar mais uma espada depois de ter
+                perdido utilizando duas espadas. Treinados nesse estilo ganham +3 em força e vigor, mas perdem -6 em
+                inteligência e agilidade
+
+                Requerimentos: conseguir utilizar três espadas, ser treinado por um mestre no estilo ou treinar o
+                Nitoryu
+                durante anos tentando usar uma terceira espada, não ter outro oficio.
+
+                Movimentos: Santoryu: Ashura, Oni-giri, Sanzen Sekai, Karasuma Gari, Tatsumaki, Ten no Teki.</p>
+              <hr>
+            </div>
+
+            <div class="multiplas_espadas">
+              <h3 class="sub_subtitle">Estilo Multiplas Espadas</h3>
+              <img src="imagens/multiplas_espadas.gif" alt="multiplas_espadas">
+              <p>O estilo de multiplas espadas são todos aqueles que utilizam 4 ou mais lâminas, com o limite de 10,
+                geralmente não mudam muito entre si a não ser pela quantidade de ataques. Não recebe nenhum bônus, o
+                terceiro ataque recebe -2 em acerto e dano, a partir dai todos os ataques subsequentes recebem -1 em
+                acerto e dano (3º ataque -2, 4º ataque -3, assim sucessivamente)
+
+                Requerimentos: Conseguir utilizar 4 espadas ou mais
+
+                movimentos: chuva de lâminas, tornado, Raijin, Harinezumi, Lâminas do Caos, All for One.</p>
+              <hr>
+            </div>
+
+            <div class="esgrima">
+              <h3 class="sub_subtitle">Esgrima</h3>
+              <img src="imagens/esgrima.gif" alt="esgrima">
+              <p>A esgrima é semelhante ao estilo ittoryu, entretanto, seu foco é mais em ataques rápidos e na sua
+                movimentação. Treinados em esgrima recebem +6 em agilidade e +5 em destreza e +2 em vigor, mas perdem -3
+                em força.
+
+                Requerimentos: Capacidade de usar espadas, não ser pesado, não ser gigante, ter 10 em agilidade.
+
+                movimentos: Afundo, Estocada, Balestra, Destaque, Parada, Resposta</p>
+              <hr>
+            </div>
+
+            <div class="espada_longa">
+              <h3 class="sub_subtitle">Espada Longa</h3>
+              <img src="imagens/espada_longa.gif" alt="espada_longa">
+              <p>Espada longa é um estilo onde se utiliza uma única e comprida espada, com ataques poderosos e únicos,
+                possuem um poder destrutivo maior que o Ittoryu porém seus ataques são mais lerdos. Treinados nesse
+                estilo
+                ganham +8 e força e +3 em vigor, mas recebem -3 em agilidade e destreza.
+
+                Requerimentos: Capacidade de empunhar uma espada longa, ter sido treinaod por um mestre nesse estilo,
+                não
+                possuir outro oficio
+
+                Movimentos: Cho wo Hau Zangeki, Kokuto Arahoshi, Ryodan, Zanpakuto, Dragon Slayer, Avalon.</p>
+              <hr>
+            </div>
+
+            <div class="foice">
+              <h3 class="sub_subtitle">Foice</h3>
+              <img src="imagens/foice.gif" alt="foice">
+              <p>Foices tem como foco ataques em área e em utilizar movimentos de giro, são uma das armas mais dificeis
+                de
+                serem manejadas porém com um poder de dilacerar seus inimigos grande. Treinados nesse estilo ganham + 5
+                em
+                força e + 4 em vigor, mas recebem -4 em agilidade e destreza.
+
+                Requerimentos: 10 em força, treinado no uso de foice, tamanho de um humano ou maior.
+
+                Movimentos: Esquife de Ossos, Empalar, Fenda Profunda, Corte Caótico, Jashin, 13 Jason.</p>
+              <hr>
+            </div>
+
+            <div class="katar">
+              <h3 class="sub_subtitle">Katar</h3>
+              <img src="imagens/katar.gif" alt="katar">
+              <p>Katar são manoplas equipadas com lâminas, geralmente usadas mais em ataques furtivos do que combates
+                diretos, tem como intenção debilitar ou eliminar o alvo em um único ataque. Treinados nessa arma recebem
+                +10 em agilidade, +6 em destreza, +4 em força, -5 em resistência e -5 em vigor.
+
+                Requerimentos: Treinado por um mestre no uso dessa arma, não ser gigante, conseguir segurar um katar.
+
+                Movimentos: Shadow Blade, Tandava, Deva Loka, Rama Navani, Hanuman Jayanti, Bhai Dooj. </p>
+              <hr>
+            </div>
+
+            <div class="machado">
+              <h3 class="sub_subtitle">Machado</h3>
+              <img src="imagens/machado.gif" alt="machado">
+              <p>Machados são armas de guerra geralmente usados por gigantes, focados em ataques pesados que desmembram
+                alvos, são mais dificeis de acertar porém com grande poder destrutivo. Treinados no uso de machados
+                recebem +9 em força e -6 em agilidade e destreza.
+
+                Requerimentos: Treinado no uso de machado, ser humano ou maior, não ter outro oficio
+
+                Movimentos: Riese Thor, Knecht Ruprecht, Erdhenne, Rübezahl, Klein Mahr, Jotunheim.</p>
+              <hr>
+            </div>
+
+            <div class="alabarda">
+              <h3 class="sub_subtitle">Alabarda</h3>
+              <img src="imagens/alabarda.gif" alt="alabarda">
+              <p>Alabarda é a arma majoritariamente utilizada pela cavalaria, mas também existem alguns guerreiros que a
+                utilizam em solo, um estilo que se deu origem do país de Yan hua. Treinados nesse estilo recebem +7 em
+                força, resistência, vigor e -3 de agilidade e inteligência.
+
+                Requerimentos: Treinado em uso de alabardas, 10 em força, usar as duas mãos
+
+                Movimentos: Devoradora de Céus, Hōtengeki, Sun Down, Total Eclipse, Erxin, Ri Chu</p>
+              <hr>
+            </div>
+
+          </div>
+
+          <!-- ARTES MARCIAIS-->
+          <div class="artesmarciais" id="artesmarciais">
+            <h2 class="wiki_subtitle">Artes Marciais</h2>
+            <p>Lutadores que utilizam mãos livres são especialistas em combate desarmado, recebem conhecimento em 2
+              estilos, podendo pegar 1 habilidade de cada, ou se preferir pode focar apenas em 1 estilo tendo 3
+              movimentos.</p>
+
+            <div class="gun_fu">
+              <h3 class="sub_subtitle">Gun Fu</h3>
+              <img src="imagens/gunfu.gif" alt="gunfu">
+              <p>Perito na arte do combate a curta distância e em utilizar pistolas, lutadores de gun-fu combinam armas
+                de
+                fogo com artes marciais. Ganha +3 em agilidade e +4 em destreza.
+
+                requerimentos: conseguir utilizar pistolas, habilidade em armas de fogo da especialização do Atirador.
+
+                movimentos: gun-kata, templo da bala, jackpot, bullet time, SStylish, reloaded, quick step.</p>
+              <hr>
+            </div>
+
+            <div class="blackleg">
+              <h3 class="sub_subtitle">Black Leg</h3>
+              <img src="imagens/blackleg.gif" alt="blackleg">
+              <p>Estilo de arte marcial que utiliza apenas as pernas, os lutadores desse estilo tem o código moral de
+                nunca utilizar as mãos para o combate. Ganha +5 em agilidade e +3 em força.
+
+                Requerimentos: conseguir usar pernas, não utilizar as mãos para lutar, ter pelo menos 10 de força.
+
+                movimentos: Chef menu, Reception, Anti-Manner Kick Course, Concassé , Slice Shoot, Party Table Kick
+                Course, Parage Shot, Sky Walk, Diable Jambe.</p>
+              <hr>
+            </div>
+
+            <div class="karatetritao">
+              <h3 class="sub_subtitle">Karatê Tritão</h3>
+              <img src="imagens/karatetritao.gif" alt="karatetritao">
+              <p>O Karate Tritão foi uma arte marcial desenvolvida pelos tritões, seu estilo consiste em ataques
+                precisos
+                e diretos, sejam corpo a corpo ou socos tão potentes que uma rajada de ar propaga até o adversário.
+                Treinados nesse estilo ganham +7 de força, +3 de resistência ,+2 destreza e -5 em carisma.
+
+                Requerimentos: Ser um tritão ou ter aprendido com um tritão, não ser do Governo Mundial, conseguir
+                utilizar as mãos.
+
+                Movimentos: Seiken, Yarinami, Samehada Shotei, Samegawara Seiken, Uchimizu, Mawashigeri, Buraikan,
+                Soshaku, Onigawara Seiken</p>
+              <hr>
+            </div>
+
+            <div class="jujutsutritao">
+              <h3 class="sub_subtitle">Jujutsu Tritão</h3>
+              <img src="imagens/jujutsutritao.webp" alt="jujutsutritao">
+              <p>O Jujutsu Tritão é uma arte marcial usada pelos homem peixe baseada em quedas e na manipulação de água,
+                diferente do Karate Tritão, os ataques do estilo Jujutsu geralmente são a longa distância. Tritões
+                tendem
+                a saber ambos os estilos o que os torna um dos melhores combatentes em combates que não envolve o uso de
+                haki ou akuma no mi. Treinados nesse estilo ganham +3 agilidade e +3 destreza.
+
+
+                Requerimentos: Ser um tritão ou ter aprendido com um tritão, não ser do Governo Mundial, conseguir
+                utilizar as mãos.
+
+                Movimentos: Mizugokoro, Kairyu Ipponzeoi, Murasame, Uzushio Ipponzeoi, Hikishio Ipponzeoi</p>
+              <hr>
+            </div>
+
+            <div class="newkamakenpo">
+              <h3 class="sub_subtitle">Newkama Kenpo</h3>
+              <img src="imagens/newkamakenpo.gif" alt="newkamakenpo">
+              <p>O estilo de luta utilizado pelos Okama do Reino Kamabakka. Extravagante e letal, o Newkama Kenpo
+                combina
+                ataques a longa distância com corpo a corpo. Treinados nesse estilo ganham +7 em agilidade.
+
+
+                Requerimentos: Usar cilios e unhas postiças entre outros adereços da moda, saber karate, ter aprendido
+                com
+                um outro Okama.
+
+                Movimentos: Death Wink, Mudage Shori Ken, Rolling Aesthe, Ganmen Spectrum, Galaxy Wink</p>
+              <hr>
+            </div>
+
+            <div class="boxe">
+              <h3 class="sub_subtitle">Boxe</h3>
+              <img src="imagens/box.gif" alt="boxe">
+              <p>A arte marcial considerada mais "machão" entre todas, seu estilo se baseia em utilizar apenas os punhos
+                para realizar socos potentes e destrutivos, além de seus lutadores terem uma grande resistência
+                corporal.
+                Boxeadores tem +8 em força e +5 em vigor, porém tem -5 em inteligência.
+
+                Requerimentos: utilizar apenas as mãos, ter pelo menos 10 em força, ter tido um treinador anteriormente,
+                não utilizar nenhum tipo de armadura sendo permitido apenas o uso de manoplas e luvas.
+
+
+                movimentos: uppercut, gancho, jab, finta, pendulo, crosspunch, comeback, dempsey roll, superman punch.
+              </p>
+              <hr>
+            </div>
+
+            <div>
+              <h3 class="sub_subtitle">Rokushiki/Rokougan</h3>
+              <img src="imagens/Rokushiki.webp" alt="">
+              <p>A arte marcial militar do governo mundial e marinha, seu foco é aprimorar cada aspecto do corpo humano
+                tornando seus lutadores em super-humanos. Normalmente é mais comum ser visto em maestria pelos agentes
+                das
+                Cypher Pool, porém alguns marinheiros também utilizam. Treinados nesse estilo ganham +4 em resistência,
+                força, vigor, agilidade e destreza, porém perdem -5 em carisma, inteligência e FDV. Ao aprender todas as
+                6
+                habilidades do Rokushiki, o usuário pode aprender o Rokougan para utilizar de ataques ainda mais
+                poderosos.
+
+
+                Requerimentos: Ser da marinha ou Governo Mundial, ser humano, não ser de nenhuma espécie ameaçada pelo
+                governo (homem peixe, lunariano, oni, etc), ter tido treinamento com um mestre no estilo, ser adulto.
+
+
+                Movimentos : Geppo, Tekkai, Rankyaku, Soru, Shigan, Kami-e, (Rokushiki Ogi: Rokuogan, Sai Dai Rin:
+                Rokuogan)</p>
+              <hr>
+            </div>
+
+            <div>
+              <h3 class="sub_subtitle">Tontatta Combat</h3>
+              <img src="imagens/tontatacombat.gif" alt="">
+              <p>Tontatta Combat é um estilo de luta baseado em ataque de curta distância que envolve movimentos de
+                corpo
+                inteiro. Ele utiliza os braços do usuário, bem como as caudas exclusivas dos tontatta. Sua arma
+                preferida
+                são lanças do seu tamanho, embora sejam capazes de usar qualquer arma que encontrarem ou lutar
+                desarmados,
+                se necessário. Recebe +10 de agilidade e -5 em resistência e vitalidade.
+
+
+
+                Requerimentos: Ser um Tontatta
+
+
+                Movimentos: Martelo Tontatta, Tontatta Swing, Tail Walk, Ataque rápido, investida relampago, cavar,
+                tempestade de areia.</p>
+              <hr>
+            </div>
+
+            <div>
+              <h3 class="sub_subtitle">Sumô</h3>
+              <img src="imagens/sumo.gif" alt="">
+              <p>A arte marcial oriunda do país de Wano, suas táticas consistem em ataques de mão aberta e queda.
+                Treinados em sumô ganham +8 em resistência, +5 em força e +10 em vitalidade, mas perdem -6 em agilidade
+                e
+                -3 em inteligência.
+
+
+                Requerimentos: 10 de resistência, ter pernas e mãos, ter estatura média, ter praticado antes.
+
+
+                movimentos: Oshi-taoshi, Uwate-nage, tsuki-dashi, Hyakuretsu Harite, Zutsuki, Midarebotan, Yatagarasu
+              </p>
+              <hr>
+            </div>
+
+            <div>
+              <h3 class="sub_subtitle">Ryusoken</h3>
+              <img src="imagens/ryusoken.webp" alt="">
+              <p>Arte marcial do exército revolucionário, tem como base destruir o core do alvo, conseguindo causar dano
+                internamente podendo até mesmo passar pelo haki. Treinados nesse estilo ganham +5 em força, +5 em
+                destreza
+                e +3 em vigor, mas perdem -5 em carisma e -3 em resistência.
+
+
+                requerimentos: Ser do exército revolucionário, conseguir usar haki, ser humano ou humanoide.
+
+                movimentos: Ryu no Kagizume, Ryu no Ibuki, Tiger Drop, 7 selos, uroko ryu, hanazakari.</p>
+              <hr>
+            </div>
+
+            <div>
+              <h3 class="sub_subtitle">Hasshoken</h3>
+              <img src="imagens/hasshoken.gif" alt="">
+              <p>Arte marcial vinda do país Kano, seus ataques consistem em emitir ondas de impacto que reverberam
+                através
+                de seus alvos, não podendo ser bloqueados, podendo apenas ter contra-ataque ou esquivas. Treinados nesse
+                estilo ganham +3 de força e +5 de vigor.
+
+
+                Requerimentos: Ser do país Kano ou ter aprendido com alguém vindo de lá, não utilizar armaduras, 10 de
+                força.
+
+
+                movimentos: Bujaogen, Hasshoken Ogi: Kiryu Kirikugi, Xie Gu, Yi jin, Sanda, Baguazhang</p>
+              <hr>
+            </div>
+
+            <div>
+              <h3 class="sub_subtitle">Luta de Rua</h3>
+              <img src="imagens/lutaderua.gif" alt="">
+              <p>Um estilo de luta completamente livre onde o lutador ataca com chutes, socos, cabeça e de todas as
+                formas
+                possíveis, apesar de não ter muita técnica é o mais versátil pelo seu estilo de luta selvagem. Treinados
+                nesse estilo ganham +5 de força, +3 em vigor e resistência, +2 em agilidade, mas perdem -5 em
+                inteligência
+                e -5 em percepção.
+
+                requerimentos: 10 em força, não ser do governo, não ter nenhuma outra especialização com exceção de
+                lâminas e contusão, capacidade de usar mãos e pernas.
+
+                movimentos: Frenesi, Ataque direto, low kick, elblow, cabeçada, sequência, animal fighter.</p>
+
+            </div>
+            <hr>
+          </div>
+
+          <!-- ATIRADOR-->
+          <div class="atirador" id="atirador" id="atirador">
+            <h2 class="wiki_subtitle">Atirador</h2>
+            <p>Atiradores são combatentes a longa distância, especialistas em controle do combate são os que comandam a
+              guerra. Atiradores podem seguir as seguintes escolas: Armas de Fogo; Projéteis; Estilingues.
+
+              A cada 5 níveis o atirador pode escolher uma nova habilidade de outra escola, ou da mesma escola caso não
+              tenha todas.</p>
+
+            <!-- ARMAS DE FOGO-->
+            <div>
+              <h3 class="sub_subtitle">Armas de Fogo</h3>
+              <img src="imagens/armasdefogo.gif" alt="">
+              <p>Um atirador com armas de fogo são especialistas em utilizar armamento de longa distância e alta
+                precisão,
+                podendo ter treinamento nas seguintes armas:</p>
+              <ul class="ul_esp">
+                <li><span>Armas de média distância - </span>Armas de média distância são menores e mais fáceis de serem
+                  carregadas, além terem um alcance médio também são as mais fáceis de se manejar. Algumas armas de
+                  média
+                  distância são garruchas e espingardas, a distância que suas balas chegam é até 40m. Esse treinamento
+                  concede +5 em percepção (acumulativo) e +5 em destreza.</li>
+                <li><span>Armas de longo alcance - </span>Armas de longo alcance são considerados rifles, seu alcance
+                  chega até 300m. Esse treinamento concede +10 em percepção (acumutalivo), porém você tem - 3 em
+                  agilidade
+                  e tem a metade do deslocamento.</li>
+              </ul>
+              <hr>
+            </div>
+
+            <!-- PROJÉTEIS -->
+            <div>
+              <h3 class="sub_subtitle">Projéteis</h3>
+              <img src="imagens/projeteis.gif" alt="">
+              <p>Um atirador com treinamento em projéteis é habilidoso na arte de arremesso, podendo arremessar
+                shurikens,
+                facas, dardos, na verdade, ele pode arremessar qualquer coisa, desde é claro que você consiga levantar
+                esse objeto! seu treinamento em arremesso te concedeu +5 em percepção e +7 em destreza. Os arremessos
+                dos
+                objetos se baseiam em 3 tipos:</p>
+              <ul class="ul_esp">
+                <li><span>Objetos Leves - </span>Objetos leves como shurikens, facas de arremesso, dardos, etc ganham +5
+                  no acerto, não sendo muito dificeis de serem arremessados.</li>
+                <li><span>Objetos Médios - </span>Objetos leves como cadeiras, mesas, barris, entre outros ganham +2 em
+                  acerto, precisando de um teste de força, caso acerte o alvo, ele deve rodar um teste de resistência,
+                  caso falhe ele cai no chão.</li>
+                <li><span>Objetos Pesados - </span>Objetos pesados como bolas de canhão, âncoras, etc ganham +2 no
+                  acerto,
+                  porém demandam um esforço maior para serem arremessados, somam seu modificador de força. Em caso de
+                  critico, o alvo sofre uma fratura no local do impacto.</li>
+              </ul>
+              <hr>
+            </div>
+
+            <!-- ESTILINGUE -->
+            <div>
+              <h3 class="sub_subtitle">Estilingues</h3>
+              <img src="imagens/estilingue.gif" alt="">
+              <p>Estilingues são uma das armas que exigem treino por diversos fatores. São considerados estilingues não
+                só
+                os próprios estilingues, como também arcos e bestas. Sua principal vantagem é poder utilizar munições de
+                diferentes tipos. Esse treinamento te concede +5 de percepção e +6 em destreza. Além disso ataques com
+                estilingues são considerados silenciosos, podendo ser realizados de modo furtivo. A distância dos
+                projeteis podem variar, sendo assim não depende apenas da arma que está utilizando, mas também da força
+                que aplicou, são categorizados da seguinte forma:</p>
+              <ul class="ul_esp">
+                <li><span>Perto - </span>O alvo está perto de você, não tem dificuldade em acertar ele, sendo impossível
+                  de errar porém diminuindo seu dano na metade em caso de falha critica. (considerado até 15m).</li>
+                <li><span>Média Distância - </span>O alvo está a uma distância moderada de você, você precisa de um
+                  empenho a mais, para isso faça um teste de força, caso falhe no teste de força mas acerte o alvo seu
+                  dano de impacto é reduzido. (15~50 metros).</li>
+                <li><span>Distante - </span>O alvo está muito longe de você, você precisa superar barreiras para
+                  conseguir
+                  realizar a ação. Faça um teste de força, caso falhe pode recorrer a um teste de resistência para
+                  conseguir manter aquela posição por mais tempo afim de tentar novamente no seu próximo turno. Caso
+                  falhe
+                  de novo (ou opte por não utilizar desse efeito), role acerto com -10. (50m< ).</li>
+              </ul>
+            </div>
+            <hr>
+          </div>
+
+          <!-- COMBATE-->
+          <div class="combate" id="combate">
+            <h2 class="wiki_subtitle">Combate</h2>
+            <img src="imagens/combate.gif" alt="">
+            <p>No inicio de todo combate, o jogador deve rolar <span>1d20 + iniciativa + buff (caso tenha)</span> , a
+              ordem dos turno
+              será decrescente indo do maior resultado para o menor. Iniciativa não possui nem falha critica nem sucesso
+              critico.</p>
+            <br>
+            <p>O dano causado é <span>dado + atributo + bônus da raça + bônus da especialização + bônus da afiliação (se
+                tiver
+                buff) + bônus da arma (se tiver arma).</span> O dano base sem contar nenhum adicional é feito a partir
+              do 2d6,
+              sendo assim qualquer personagem vai causar no mínimo 2 de dano e no máximo 12 a partir dos dados iniciais,
+              exceto em casos de critico. A partir do nível 10, cada 2 níveis seguintes o jogador ganha mais 1d6 em seu
+              dano, por exemplo: nvl 10 3d6, nvl 12 4d6, nvl 14 5d6...</p>
+            <br>
+
+            <p>O acerto se dá com base em uma rolagem de <span>2d10 + mod DES</span> , caso tire 10 na rolagem dos dois
+              dados será
+              considerado um crítico, da mesma forma caso tire 1 será considerado falha critica. </p>
+            <br>
+            <p> Como reação, o alvo deve escolher entre esquiva ou defesa. Em caso de esquiva, deve rolar <span>2d10 +
+                mod AGI</span> ,
+              se
+              seu resultado for igual, o dano é causado pela metade, caso seja maior não toma nenhum dano.
+              Em caso de defesa, deve <span>rolar 2d6 + mod RES</span>
+
+              Caso a defesa seja menor que o dano e MENOR que metade do dano, então o dano causado é igual ao quanto o
+              dano passou do resultado da defesa, exemplo: dano causado = 100, defesa = 40, então o alvo tomou 60 de
+              dano.
+
+              Caso a defesa seja maior que a metade porém não igual, o dano é metade - 2% para cada dezena que passou da
+              metade, até 50% , exemplo: dano causado = 800, defesa = 450, 450 passou 5 dezenas da metade do dano, então
+              o
+              alvo levou 360 de dano.
+
+              Caso a defesa seja igual ou maior ao dano, o alvo toma apenas 2% do dano, exemplo: dano causado = 600,
+              defesa = 600, o alvo levou 12 de dano.
+
+              A partir do nível 10, a cada 2 níveis seguintes o jogador ganha mais 1d3 adicional na defesa, por exemplo:
+              nvl 10 2d6 + 1d3, nvl 12 2d6 + 2d3, nvl 14 2d6 + 3d3...</p>
+            <p>Contra-ataque é feito com um teste de acerto contra acerto, o maior resultado é o que vale, o que tirar
+              menor resultado recebe todo dano, caso o resultado seja igual quem tiver atributo maior prevalece, se os
+              atributos forem iguais ambos recebem dano.</p>
+            <hr>
+          </div>
+
+          <!-- CONDIÇÕES-->
+          <div class="condicoes" id="condicoes">
+            <h2 class="wiki_subtitle">Condições</h2>
+            <h3 class="sub_subtitle">Lista de condições possíveis:</h3>
+            <ul class="ul_cond">
+              <li><span>Caído - </span>Fica no chão precisando gastar a ação para se levantar.</li>
+              <li><span>Terreno mais alto - </span>Recebe +10 em acerto a longa distância.</li>
+              <li><span>Terreno mais baixo- </span>Recebe -10 em acerto a longa distância, a cada 5 metros na diferença
+                de
+                altitude o
+                acerto diminui -5.</li>
+              <li><span>Queimando - </span>Recebe 2d10 de dano por turno.</li>
+              <li><span>Congelado - </span>Fica imovel e incapaz de reagir, recebendo 10 de dano por turno.</li>
+              <li><span>Sangrando - </span>Recebe 2d6 de dano por turno.</li>
+              <li><span>Hemorragia - </span>Recebe 4d6 de dano por turno.</li>
+              <li><span>Queda - </span>Recebe 20 de dano a cada 5 metros.</li>
+              <li><span>Fadiga - </span>Recebe -10 em agilidade e força, deslocamento diminui metade.</li>
+              <li><span>Exausto - </span>Não consegue realizar a ação e fica caído até recuperar 10% do vigor.</li>
+              <li><span>Eletrecutado - </span>Recebe 2d5 de dano por turno, roda resistência para tentar agir.</li>
+              <li><span>Afogando - </span>Recebe 4d10 de dano por turno.</li>
+              <li><span>Compressado - </span>Recebe 20 de dano por turno, aumenta em 50 a cada 10kg.</li>
+              <li><span>Enraizado - </span>Não consegue se mover</li>
+              <li><span>Fome - </span>A partir da metade da fome fica fadigado, caso fique zerado fica exausto.</li>
+              <li><span>Osso Deslocado - </span>Deixa o membro incapaz de se mexer, caso tente movimentar sofre 1d6 de
+                dano.</li>
+              <li><span>Osso Quebrado - </span>Deixa o membro incapaz de se mexer, caso tente movimentar sofre 3d6 de
+                dano.</li>
+              <li><span>Osso Esmagado - </span>Deixa seu membro incapaz de se mexer, caso tente mvoimentar sofre 10d6 de
+                dano.</li>
+              <li><span>Dor Leve - </span>A partir do 50% de HP passa a sentir dor leve, diminuindo o acerto em -5.</li>
+              <li><span>Dor Moderada</span>Diminui em 5 metros seu deslocamento e diminui seu acerto em -7. Recebe a
+                partir do HP em 40%.</li>
+              <li><span>Dor Grande - </span>Diminui seu deslocamento em 8 metros e diminui seu acerto em -10. Recebe a
+                partir do HP em 20%.</li>
+              <li><span>Cego - </span>Não consegue enxergar e tem um debuff de -10 no acerto.</li>
+              <li><span>Surdo - </span>Não escuta e recebe -5 em percepção.</li>
+            </ul>
+
+            <h3 class="sub_subtitle">Condições Emocionais</h3>
+            <p>Condições que podem ser impostas através de algumas akuma no mi e música.</p>
+            <ul class="ul_cond">
+              <li><span>Tristeza - </span>Incapaz de se mover.</li>
+              <li><span>Raiva - </span>Recebe -5 em acerto e só ataca um único alvo.</li>
+              <li><span>Felicidade - </span>Recebe +5 em força de vontade.</li>
+              <li><span>Motivado - </span>Recebe o mod de FDV na ação.</li>
+              <li><span>Medo - </span>Não consegue atacar o alvo e tenta fugir.</li>
+              <li><span>Confusão - </span>Não consegue agir direito, caso tente atacar role percepção, se falhar acerta
+                um
+                aliado ou a si
+                mesmo.</li>
+            </ul>
+
+            <hr>
+          </div>
+
+          <!-- CONDIÇÕES DE COMBATE-->
+          <div class="condicoes_combate" id="condicoes_combate">
+            <h2 class="wiki_subtitle">Condições de Combate</h2>
+            <p>Condições de combate são atingidas em um determinado ponto da luta, em decorrencia de algum ocorrido.
+
+              Em caso do seu HP ficar a baixo de 50% você começa a sangrar, caso fique com 20% começa a ter hemorragia.
+              Quando seu HP chegar a 0 você ficará desacordado, se não receber tratamento começará a tomar dano em sua
+              vida negativa, que se não for trato rápido vai morrer.
+
+              Ao receber um dano, se a diferença de força x resistência for 20 no atributo recebe um ferimento profundo,
+              causando uma cicatriz permanente e hemorragia instantanea para danos cortantes. Danos por impacto com
+              diferença de 20 no atributo causam osso quebrado.
+
+              Se a diferença entre os atributos for 30 ou maior, então o dano cortante pode acabar decepando a área
+              afetada, afetando sua vida máxima. Danos por impacto esmigalham seus ossos, causando osso esmagado.
+
+              Ataques perfurantes causam danos parecidos, porém acertam diretamente os órgãos e por consequência
+              diretamente sua vida máxima. Faz um teste de força x resistência, se no resultado a força for 20 maior
+              então
+              causa hemorragia 2x e 1/3 do dano na vida máxima, se for 30 ou maior causa hemorragia 3x e metade do dano
+              na
+              vida máxima.
+
+              Ferimentos leves demoram de 1 dia até 1 semana para serem curados. Ficando fadigado até estar curado
+
+              Ferimento moderado demora de 1 semana até 3 semanas. Ficando fadigado até estar curado
+
+              Ferimentos grandes podem demorar de 3 semanas até muito mais. Ficando exausto nas primeira duas semanas,
+              sentindo dor moderada e fadigado até se curar.</p>
+          </div>
+        </div>
+
+
+      </div>
+                  <!-- FOOTER-->
+                  <div class="footer">
+                    <footer>
+                      <hr>
+                      <p>Site criado por <a href="https://github.com/laurarodriguesd">Laura Rodrigues</a></p>
+                    </footer>
+                  </div>
+    </div>
+
+  </div>
+
+  </div>
+</body>
+
+</html>
